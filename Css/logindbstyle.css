@@ -474,39 +474,6 @@ display:  block;
 
 
 
-             /* responive voor de laptop with hidpi */
-             @media only screen and (max-height:1440px) {   
-
-              .golf   { 
-              height:100%;
-              } 
-            
-             .plaatje {  
-              padding-top:10px;
-             height:380px; 
-             width:380px;
-             } 
-            
-             .formulier {  
-              padding-bottom:10px;
-              margin: 0 auto;
-              display:block;  
-              text-align:center;
-             } 
-             h1 { 
-               font-size:25px; 
-               margin: 0 auto; 
-               text-align: center;  
-               padding-bottom:10px; 
-            
-            
-             } 
-            
-             .gebruikersnaaminput {  
-             width: 200px;
-            
-              } 
-            } 
-       
+ 
  
 
