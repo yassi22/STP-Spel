@@ -1,0 +1,318 @@
+@charset "UTF-8";
+:root {
+ --blue: #1EBCDE;   
+ --geel: #FFD40C; 
+ --black: #000000; 
+ --font: 'Roboto', sans-serif;  
+ --donkerblue: #2070BF; 
+
+}
+ body { 
+    background-color: var(--blue);  
+    padding:0; 
+    margin:0;
+ }
+ 
+ html {
+    margin: 0px; 
+    background-size: cover;
+    background-repeat: no-repeat;  
+    scroll-behavior: smooth; 
+    padding:0; 
+    margin:0; 
+    } 
+
+/* header */
+h1 { 
+    color:var(--geel);; 
+    margin: 0 auto; 
+    text-align:center;
+    font-family:  var(--font);
+    font-size:34px; 
+    padding-top:15px; 
+    font-weight:300; 
+    padding-bottom:20px;
+}  
+
+h2 { 
+  color:var(--geel);; 
+    margin: 0 auto; 
+    text-align:center;
+    font-family:  var(--font);
+    font-size:30px; 
+    padding-top:15px; 
+    font-weight:300; 
+    padding-bottom:20px;
+}
+  
+/* dit is voor de paneel */
+
+  
+p { 
+    margin:0 auto;  
+    color:var(--black); 
+    text-align:center; 
+    font-family: var(--font);
+    font-size:18px;
+}  
+
+
+.knopregister { 
+    text-align: center; 
+    font-size:16px; 
+    text-decoration:none; 
+    font-family: var(--font); 
+    cursor: pointer; 
+    background-color:var(--blue); 
+    width: 120px;
+    height:30px; 
+    border:1px solid black;  
+    color:var(--geel);
+    border-radius: 10px;   
+ 
+    
+    }     
+    .knopregister  a { 
+        color:var(--geel);  
+        text-align: center; 
+        font-size:16px;  
+        margin: 0 auto;
+        text-decoration:none; 
+        font-family: var(--font); 
+        cursor: pointer; 
+        
+        }   
+.tijd { 
+text-align: left;
+}
+ 
+  
+.naam {  
+    padding-top:10px;
+} 
+
+.plaatjegastenboek { 
+height:300px; 
+width: 300px;
+border-radius: 10px;
+display:block; 
+text-align: left;
+}
+
+ 
+
+/*  einde van de paneel */  
+
+
+/* De styling voor de berichten */
+
+.Berichten { 
+background-color:yellow;
+border:1px solid black; 
+margin: 0 auto;   
+border-radius:  10px ; 
+ 
+}  
+ 
+.Berichten form { 
+    margin: 0 auto; 
+    text-align: left; 
+    display:block;    
+     
+} 
+
+.reactie { 
+text-align: left; 
+} 
+
+.bericht { 
+text-align: left;
+}  
+
+.reageerknop {  
+    border-radius: 10px; 
+    width: 100px;
+    height:30px;
+    color:var(--geel);  
+    text-align: center; 
+    font-size:16px; 
+    text-decoration:none; 
+    font-family: var(--font); 
+    cursor: pointer; 
+    background-color:var(--blue); 
+    border:1px solid black;
+} 
+ 
+
+.reageerknop  a {  
+  
+    color:var(--geel);  
+    text-align: center; 
+    font-size:16px; 
+    text-decoration:none; 
+    font-family: var(--font); 
+    cursor: pointer; 
+} 
+
+ 
+
+.inputreactie {  
+    border:1px solid black; 
+    height:30px; 
+    width:11vw; 
+    border-radius: 10px; 
+    background-color:var(--blue); 
+    color:var(--geel);  
+    font-family: var(--font); 
+    font-size:15px;   
+    text-align: left;
+    }  
+ 
+ 
+ 
+ 
+ 
+
+/* golven aan de rechter kant */
+
+  
+.golf { 
+    text-align:right !important; 
+    display: block; 
+    float:right;
+    margin:auto;
+    width: auto; 
+    height:auto; 
+}     
+ 
+
+.golf2 { 
+    text-align:left !important; 
+    display: block; 
+    float:left;
+    margin:auto;
+    width: auto; 
+    height:auto;   
+    transform: rotate(180deg);
+
+}     
+  
+/* dit is voor de menu */
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: #FFD40C;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;  
+  
+}
+
+.sidenav a {
+  padding: 10px 10px 10px 30px;
+  text-decoration: none;
+  font-size: 26px;
+  color: #2070BF;
+  display: block;
+  transition: 0.3s;  
+  font-family: Arial, Helvetica, sans-serif; 
+  text-align: center; 
+   
+}
+
+.sidenav a:hover {
+  color: #6cc6d2;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 15px !important;
+  font-size: 36px;
+  margin-left: 50px;
+}
+.sidenav {padding-top: 15px;}
+.sidenav a {font-size: 26px;}
+.menuknop { 
+ float:right;
+ font-size:45px; 
+  cursor:pointer;
+  color:#2070BF;   
+ 
+}
+
+hr { 
+
+border:1px solid #2070BF;
+}  
+
+.menuplaatje { 
+height: 255px;
+width: 255px;
+margin: 0 auto; 
+text-align: center; 
+display: block; 
+padding-top:50px;
+} 
+   
+   
+ /* responsive */
+  @media only screen and (max-height: 1080px) {   
+    .golf { 
+    text-align:right !important; 
+    display: block; 
+    float:right;
+    margin:auto;
+    width: auto; 
+    height:1006px; 
+
+    }  
+
+    .golf2 { 
+        text-align:left !important; 
+        display: block; 
+        float:left;
+        margin:auto;
+        width: auto; 
+        height:1006px; 
+        transform: rotate(180deg);
+        }  
+    
+
+
+  } 
+
+
+  @media only screen and (max-height: 1000px) { 
+
+    .golf { 
+      text-align:right !important; 
+      display: block; 
+      float:right;
+      margin:auto;
+      width: auto; 
+      height:826px; 
+  
+      }  
+  
+      .golf2 { 
+          text-align:left !important; 
+          display: block; 
+          float:left;
+          margin:auto;
+          width: auto; 
+          height: 826px; 
+          transform: rotate(180deg);
+          }  
+      
+  }  
+/* menu resposive */ 
+
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  } 

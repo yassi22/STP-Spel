@@ -1,0 +1,477 @@
+@charset "UTF-8";
+:root {
+ --blue: #1EBCDE;   
+ --geel: #FFD40C; 
+ --black: #000000; 
+ --font: 'Roboto', sans-serif; 
+
+}
+ body { 
+    background-color: var(--blue);  
+    padding:0; 
+    margin:0;
+ }
+ 
+ html {
+    margin: 0px; 
+    background-size: cover;
+    background-repeat: no-repeat;  
+    scroll-behavior: smooth; 
+    padding:0; 
+    margin:0; 
+    } 
+
+/* header */
+h1 { 
+    color:var(--geel);; 
+    margin: 0 auto; 
+    text-align:center;
+    font-family:  var(--font);
+    font-size:34px; 
+    padding-top:15px; 
+    margin-left:12vw; 
+    font-weight:300;
+} 
+ 
+
+/* dit is voor de form */
+
+.loginhier { 
+color:var(--black); 
+font-family: var(--font); 
+font-size:18px; 
+padding-bottom:10px;
+} 
+
+.noregister { 
+    color:var(--black);  
+    text-align: center; 
+    font-size:18px; 
+    text-decoration:1px solid black; 
+    font-family:  var(--font);  
+   
+}  
+
+p { 
+    margin:0 auto;  
+    color:var(--black); 
+    text-align:center; 
+    font-family: var(--font);
+    font-size:18px;
+} 
+ 
+.gebruikersnaaminput {  
+border:1px solid black; 
+height:30px; 
+width:12vw; 
+border-radius: 10px; 
+background-color:var(--blue); 
+color:var(--geel);  
+font-family: var(--font); 
+font-size:15px;   
+text-align: center;
+}
+form {  
+     
+    margin:0 auto; 
+    text-align:center;  
+}  
+
+ 
+  
+.formulier { 
+    text-align:left; 
+    height:305px; 
+    width:300px; 
+    border-radius: 10px;
+    background-color: var(--geel); 
+    border: 1px solid black; 
+    margin-left:4vw; 
+   
+}
+
+.knopregister  a { 
+color:var(--geel);  
+text-align: center; 
+font-size:16px; 
+text-decoration:underline; 
+font-family: var(--font); 
+cursor: pointer; 
+
+}   
+
+.knopregister { 
+    text-align: center; 
+    font-size:16px; 
+    text-decoration:none; 
+    font-family: var(--font); 
+    cursor: pointer; 
+    background-color:var(--blue); 
+    width: 100px;
+    height:30px; 
+    border:1px solid black;  
+    color:var(--geel);
+    border-radius: 10px;  
+    
+    }  
+
+.inlogknop {  
+    border-radius: 10px; 
+    width: 100px;
+    height:30px;
+    color:var(--geel);  
+    text-align: center; 
+    font-size:16px; 
+    text-decoration:none; 
+    font-family: var(--font); 
+    cursor: pointer; 
+    background-color:var(--blue); 
+    border:1px solid black;
+}
+
+
+/* dit is voor de form */ 
+ 
+
+/* golven aan de rechter kant */
+
+ 
+ 
+
+.golf { 
+    text-align:right !important; 
+    display: block; 
+    float:right;
+    margin:auto;
+    width: auto; 
+    height:auto; 
+}    
+
+  
+/* dit is voor het plaatje van de gebruiker */ 
+
+.loginuser  { 
+height:200px !important; 
+width:200px !important; 
+border-radius:10px;
+
+}
+
+.plaatje { 
+height:500px; 
+width:500px; 
+border-radius:10px;  
+margin: 0 auto; 
+text-align: center;
+display:  block; 
+ 
+ 
+ 
+} 
+
+ 
+ 
+
+/* dit is voor de menu */
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 300px; 
+  
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px; 
+     
+  }
+  
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+  
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }  
+
+
+  .menuknop { 
+  float:right;
+  }
+   
+   
+ /* responsive */
+  @media only screen and (max-height: 1080px) {   
+    .golf { 
+    text-align:right !important; 
+    display: block; 
+    float:right;
+    margin:auto;
+    width: auto; 
+    height:1006px; 
+
+    }  
+
+ 
+
+  } 
+ /* responsive voor de iphone x */
+  @media only screen and (max-height: 812px) {   
+
+  .golf   { 
+    display:none;
+  } 
+
+ .plaatje { 
+   height: 275px;
+   width: 275px; 
+   padding-top:10px;
+ } 
+
+ .formulier { 
+  margin: 0 auto;
+  display:block;  
+  text-align:center;
+ } 
+ h1 { 
+   font-size:25px; 
+   margin: 0 auto; 
+   text-align: center;  
+   padding-bottom:10px; 
+
+
+ } 
+
+ .gebruikersnaaminput {  
+ width: 200px;
+
+  } 
+  
+} 
+
+ /* responive is voor de iphone 6/7/8 */
+  @media only screen and (max-height: 736px) {   
+
+    .golf   { 
+      display:none;
+    } 
+  
+   .plaatje { 
+     height: 275px;
+     width: 275px; 
+     padding-top:10px;
+   } 
+  
+   .formulier { 
+    margin: 0 auto;
+    display:block;  
+    text-align:center;
+   } 
+   h1 { 
+     font-size:25px; 
+     margin: 0 auto; 
+     text-align: center;  
+     padding-bottom:10px; 
+  
+  
+   } 
+  
+   .gebruikersnaaminput {  
+   width: 200px;
+  
+    } 
+  } 
+  
+
+   /* responive voor de iphone 5/se*/
+   @media only screen and (max-height: 736px) {   
+
+    .golf   { 
+      display:none;
+    } 
+  
+   .plaatje { 
+  display:none;
+   } 
+  
+   .formulier {  
+  
+    margin: 0 auto;
+    display:block;  
+    text-align:center;
+   } 
+   h1 { 
+     font-size:25px; 
+     margin: 0 auto; 
+     text-align: center;  
+     padding-bottom:10px; 
+  
+  
+   } 
+  
+   .gebruikersnaaminput {  
+   width: 200px;
+  
+    } 
+  }  
+
+
+  /* responive voor de iphone 5/se*/
+  @media only screen and (max-height: 736px) {   
+
+    .golf   { 
+      display:none;
+    } 
+  
+   .plaatje { 
+  display:none;
+   } 
+  
+   .formulier {  
+  
+    margin: 0 auto;
+    display:block;  
+    text-align:center;
+   } 
+   h1 { 
+     font-size:25px; 
+     margin: 0 auto; 
+     text-align: center;  
+     padding-bottom:10px; 
+  
+  
+   } 
+  
+   .gebruikersnaaminput {  
+   width: 200px;
+  
+    }  
+  } 
+
+      /* responive  voor de google pixel 2 xl*/
+  @media only screen and (max-height: 823px) {   
+
+    .golf   { 
+    display:none;
+    } 
+  
+   .plaatje {  
+    padding-top:10px;
+   height:380px; 
+   width:380px;
+   } 
+  
+   .formulier {  
+    padding-bottom:10px;
+    margin: 0 auto;
+    display:block;  
+    text-align:center;
+   } 
+   h1 { 
+     font-size:25px; 
+     margin: 0 auto; 
+     text-align: center;  
+     padding-bottom:10px; 
+  
+  
+   } 
+  
+   .gebruikersnaaminput {  
+   width: 200px;
+  
+    } 
+  }  
+
+
+       /* responive voor de laptop with hidpi */
+       @media only screen and (max-height:1440px) {   
+
+        .golf   { 
+        height:100%;
+        } 
+      
+       .plaatje {  
+        padding-top:10px;
+       height:380px; 
+       width:380px;
+       } 
+      
+       .formulier {  
+        padding-bottom:10px;
+        margin: 0 auto;
+        display:block;  
+        text-align:center;
+       } 
+       h1 { 
+         font-size:25px; 
+         margin: 0 auto; 
+         text-align: center;  
+         padding-bottom:10px; 
+      
+      
+       } 
+      
+       .gebruikersnaaminput {  
+       width: 200px;
+      
+        } 
+      }  
+
+
+
+             /* responive voor de laptop with hidpi */
+             @media only screen and (max-height:1440px) {   
+
+              .golf   { 
+              height:100%;
+              } 
+            
+             .plaatje {  
+              padding-top:10px;
+             height:380px; 
+             width:380px;
+             } 
+            
+             .formulier {  
+              padding-bottom:10px;
+              margin: 0 auto;
+              display:block;  
+              text-align:center;
+             } 
+             h1 { 
+               font-size:25px; 
+               margin: 0 auto; 
+               text-align: center;  
+               padding-bottom:10px; 
+            
+            
+             } 
+            
+             .gebruikersnaaminput {  
+             width: 200px;
+            
+              } 
+            } 
+       
+ 
+

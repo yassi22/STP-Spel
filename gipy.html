@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>giphy maken</title>
+</head> 
+<style>  
+.pictorgramsteen{ 
+
+} 
+
+.pictorgramschaar{ 
+    
+}
+.pictorgrampapier{ 
+     
+} 
+.slide-in-left { 
+animation:slide-in-left 1s cubic-bezier(.25,.46,.45,.94) both;  
+display: inline-block;
+font-style: italic; 
+font-family: 'Roboto', sans-serif;  
+color:#2070BF;   
+
+} 
+.slide-in-left2{ animation:slide-in-left 1s cubic-bezier(.25,.46,.45,.94) both;
+display: inline-block; 
+ 
+font-style: italic; 
+    font-family: 'Roboto', sans-serif; 
+    color:#1EBCDE; 
+    } 
+.slide-in-left3{
+     animation:slide-in-left 1s cubic-bezier(.25,.46,.45,.94) both;  
+    display: inline-block; 
+    font-style: italic; 
+    font-family: 'Roboto', sans-serif; 
+    color:#6CC6D2; 
+    transition: transform 1s ease-in-out;  
+    transform: rotate(90deg);
+
+    }  
+
+    .slide-in-left3:hover {
+    transition: transform 1s ease-in-out;  
+    transform: rotate(90deg);
+
+    } 
+
+
+.slide-in-right { 
+    animation:slide-in-right 1s cubic-bezier(.25,.46,.45,.94) both;
+    display: inline-block; 
+    
+} 
+.slide-in-right2 { 
+    animation:slide-in-right 1s cubic-bezier(.25,.46,.45,.94) both;
+    display: inline-block;
+}
+.slide-in-right3 {  
+ 
+    animation:slide-in-right 1s cubic-bezier(.25,.46,.45,.94) both !important; 
+    display: inline-block;  
+    
+    } 
+
+ 
+ @keyframes slide-in-right{0%{transform:translateX(1000px);opacity:0}100%{transform:translateX(0);opacity:1}}
+ @keyframes slide-in-right2{0%{transform:translateX(1000px);opacity:0}100%{transform:translateX(0);opacity:1}}
+ @keyframes slide-in-right3{0%{transform:translateX(1000px);opacity:0}100%{transform:translateX(0);opacity:1}}
+ @keyframes slide-in-left{0%{transform:translateX(-1000px);opacity:0}100%{transform:translateX(0);opacity:1}}
+ @keyframes slide-in-left2{0%{transform:translateX(-1000px);opacity:0}100%{transform:translateX(0);opacity:1}}
+ @keyframes slide-in-left3{0%{transform:translateX(-1000px);opacity:0}100%{transform:translateX(0);opacity:1}} 
+
+.flexbox { 
+  
+}
+
+</style>
+<body> 
+    <section class="flexbox"> 
+    <div class="slide-in-left">Steen </div> <div class="slide-in-right"> ✊ </div>  <br>
+    <div class="slide-in-left2">Papier</div> <div class="slide-in-right2"> ✋ </div>  <br>
+    <div class="slide-in-left3">Schaar</div> <div class=" slide-in-right3"> ✌️</div >   <br>
+    
+</section> 
+</body>
+</html>

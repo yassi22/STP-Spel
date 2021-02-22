@@ -1,0 +1,375 @@
+@charset "UTF-8";
+:root {
+ --blue: #1EBCDE;   
+ --geel: #FFD40C; 
+ --black: #000000; 
+ --font: 'Roboto', sans-serif;  
+ --lightblue: #6cc6d2;
+
+}
+ body { 
+    background-color: var(--blue);  
+    padding:0; 
+    margin:0;
+ }
+ 
+ html {
+    margin: 0px; 
+    background-size: cover;
+    background-repeat: no-repeat;  
+    scroll-behavior: smooth; 
+    padding:0; 
+    margin:0; 
+    } 
+
+/* header */
+h1 { 
+    color:var(--geel);; 
+    margin: 0 auto; 
+    text-align:center;
+    font-family:  var(--font);
+    font-size:34px; 
+    padding-top:15px; 
+    margin-left:12vw; 
+    font-weight:300;
+} 
+ 
+
+/* dit is voor de form */
+
+.loginhier { 
+color:var(--black); 
+font-family: var(--font); 
+font-size:18px; 
+padding-bottom:10px;
+} 
+
+.noregister { 
+    color:var(--black);  
+    text-align: center; 
+    font-size:18px; 
+    text-decoration:1px solid black; 
+    font-family:  var(--font);  
+   
+}  
+
+p { 
+    margin:0 auto;  
+    color:var(--black); 
+    text-align:center; 
+    font-family: var(--font);
+    font-size:18px; 
+    padding-top:5px;
+} 
+ 
+.gebruikersnaaminput {  
+border:1px solid black; 
+height:30px; 
+width:11vw; 
+border-radius: 10px; 
+background-color:var(--blue); 
+color:var(--geel);  
+font-family: var(--font); 
+font-size:15px;   
+text-align: center;
+}  
+
+
+.wachtwoordinput {  
+    border:1px solid black; 
+    height:30px; 
+    width:11vw; 
+    border-radius: 10px; 
+    background-color:var(--blue); 
+    color:var(--geel);  
+    font-family: var(--font); 
+    font-size:15px;   
+    text-align: center;
+    } 
+    
+
+
+
+form {  
+     
+    margin:0 auto; 
+    text-align:center;  
+} 
+  
+.formulier { 
+    text-align:left; 
+    height:250px; 
+    width:300px; 
+    border-radius: 10px;
+    background-color: var(--geel); 
+    border: 1px solid black; 
+    margin-left:4vw; 
+   
+}
+
+.knopregister  a { 
+color:var(--geel);  
+text-align: center; 
+font-size:16px; 
+text-decoration:underline; 
+font-family: var(--font); 
+cursor: pointer; 
+
+}   
+
+.knopregister { 
+    text-align: center; 
+    font-size:16px; 
+    text-decoration:underline; 
+    font-family: var(--font); 
+    cursor: pointer; 
+    background-color:var(--blue); 
+    width: 240px;
+    height:40px; 
+    border:1px solid black;  
+    color:var(--geel);
+    border-radius: 10px;  
+    
+    }  
+
+.inlogknop {  
+    border-radius: 10px; 
+    width: 100px;
+    height:30px;
+    color:var(--geel);  
+    text-align: center; 
+    font-size:16px; 
+    text-decoration:none; 
+    font-family: var(--font); 
+    cursor: pointer; 
+    background-color:var(--blue); 
+    border:1px solid black;
+} 
+
+.naam { 
+    padding-top:20px;
+} 
+
+.profielwijzig { 
+    padding-top:10px;
+}
+
+
+/* dit is voor de form */ 
+ 
+
+
+.golf { 
+    text-align:right !important; 
+    display: block; 
+    float:right;
+    margin:auto;
+    width: auto; 
+    height:auto; 
+}    
+
+ 
+
+
+
+
+/* dit is voor het plaatje van de gebruiker */ 
+
+.loginuser  { 
+height:200px !important; 
+width:200px !important; 
+border-radius:10px;
+
+}
+
+.plaatje { 
+height:500px; 
+width:500px; 
+border-radius:10px;  
+margin: 0 auto; 
+text-align: center;
+display:  block; 
+ 
+ 
+ 
+}  
+
+/* dit is voor het menu */ 
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  background-color: #FFD40C;
+  overflow-x: hidden;
+  transition: 0.5s; 
+  right:0px;
+}
+
+.sidenav a {
+  padding: 10px 10px 10px 30px;
+  text-decoration: none;
+  font-size: 26px;
+  color: #2070BF;
+  display: block;
+  transition: 0.3s;  
+  font-family: Arial, Helvetica, sans-serif; 
+  text-align: center; 
+   
+}
+
+.sidenav a:hover {
+  color: #6cc6d2;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 15px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+.sidenav {padding-top: 15px;}
+.sidenav a {font-size: 26px;}
+.menuknop { 
+ float:right;
+ font-size:45px; 
+  cursor:pointer;
+  color:#2070BF;   
+  margin-right:2vw; 
+ 
+}
+
+hr { 
+
+border:1px solid #2070BF;
+}  
+
+.menuplaatje { 
+height: 255px;
+width: 255px;
+margin: 0 auto; 
+text-align: center; 
+display: block; 
+padding-top:50px;
+}   
+ 
+
+
+ 
+
+/* dit is voor de dropdown button */ 
+.dropbtn {
+    background-color: #1EBCDE;
+    color: #FFD40C;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer; 
+    border-radius: 10px; 
+    margin: 0 auto; 
+    display:  block;
+    text-align: center;
+  }
+  
+  /* Dropdown button on hover & focus */
+  .dropbtn:hover, .dropbtn:focus {
+    background-color: #2980B9;
+  }
+  
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    display:  block;
+    margin: 0 auto; 
+    text-align: center;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #2070BF;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border:1px solid black; 
+    border-radius: 10px; 
+    right:24px;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block; 
+    font-family: Arial, Helvetica, sans-serif; 
+    color:#FFD40C;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover { 
+      background-color: #1EBCDE;
+      border-radius: 10px;  
+      border:1px solid black;
+        }
+  
+  /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+  .show {display:block;}
+  
+   /* einde van de dropdown button */ 
+
+
+
+/* dit is voor de score */ 
+
+.Score { 
+text-align: left;
+border:1px solid black; 
+height:auto;
+width: 200px; 
+margin-left:10vw; 
+border-radius: 10px; 
+background-color: var(--geel);   
+ 
+
+
+} 
+
+
+.Score p {  
+text-align: left; 
+color:var(--blue);
+font-family: var(--font); 
+
+} 
+
+.Score hr { 
+display:none;
+}
+ 
+.Scorenboard { 
+text-align: left; 
+
+}
+
+
+
+  
+ 
+   
+ /* responsive */
+  @media only screen and (max-height: 1080px) {   
+    .golf { 
+    text-align:right !important; 
+    display: block; 
+    float:right;
+    margin:auto;
+    width: auto; 
+    height:909px; 
+
+    } 
+
+  }

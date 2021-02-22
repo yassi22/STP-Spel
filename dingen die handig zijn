@@ -1,0 +1,88 @@
+<section> 
+		<div id="mySidenav" class="sidenav">
+			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+			<a href="Gastenboek.php">Gastenboek </a>
+			<a href="results.php">Resultaten </a>
+			<a href="ProfielPagina.php"> Profiel Pagina</a>
+			<a href="ingelogd.php">Spel </a>
+		  </div>  
+		  <span class="menuknop" onclick="openNav()">&#9776;</span>
+		  </section> 
+	<a href="Index.html">
+	<img src="img/test.png" class="test" alt="logo van steen papier schaar">  
+    </a>      
+
+dit is de menu die nog geplaast moet worden 
+
+
+#grid-container { 
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(4,25vh);  
+    margin: 0;
+} 
+
+.golven { 
+display: grid; 
+grid-column-start:5; 
+grid-column-end:5; 
+grid-row-start:1;
+grid-row-end:4;    
+margin: 0; 
+transform: rotate(-90deg); 
+margin-top:20vh; 
+margin-left:2vw; 
+height:300px;
+} 
+
+ 
+
+
+
+
+.flex-container2 { 
+    display:flex; 
+    flex-direction: row; 
+    flex-wrap: nowrap;  
+    justify-content: flex-end;
+    align-items: stretch;  
+    align-content: normal;
+    
+} 
+
+.flex-container2 div { 
+height: 100px;
+width: 100px;
+border-radius: 10px;
+background: #000; 
+color:red;
+} 
+
+
+
+
+
+
+
+
+
+
+.flex-container2 { 
+    display:flex; 
+    flex-direction: row; 
+    flex-wrap: nowrap;  
+    justify-content: flex-end ;
+    align-items: stretch;  
+    align-content: normal;
+    margin:0; 
+    flex:1; 
+ 
+} 
+
+.flex-container2 img{ 
+height:100%; 
+width:100%; 
+border-radius: 10px; 
+transform: rotate(-90deg); 
+margin: auto; 
+} 

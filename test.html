@@ -1,0 +1,110 @@
+ 
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>testing</title>
+</head> 
+<style>
+    /* The container */
+    .container {
+      display:block; 
+      margin: 0 auto; 
+      text-align: center;
+      padding-left: 35px;
+      margin-bottom: 12px;
+      cursor: pointer;
+      font-size: 22px;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none; 
+      display: inline-block;
+    }
+    
+    /* Hide the browser's default radio button */
+    .container input {
+      margin: 0 auto; 
+      text-align:  center;
+      opacity: 0;
+      cursor: pointer;
+    }
+    
+    /* Create a custom radio button */
+    .checkmark {
+      margin: 0 auto; 
+      text-align: center; 
+      display: inline-block;
+      height: 100px;
+      width: 100px;
+      background-color: #eee;
+      border-radius: 50%;
+    }
+    
+    /* On mouse-over, add a grey background color */
+    .container:hover input ~ .checkmark {
+      background-color: #ccc;
+    }
+    
+    /* When the radio button is checked, add a blue background */
+    .container input:checked ~ .checkmark {
+      background-color: #2196F3;
+    }
+    
+    /* Create the indicator (the dot/circle - hidden when not checked) */
+    .checkmark:after {
+      content: "";
+      margin:0 auto;  
+      display: inline-block;
+      text-align: center;
+      display: none;
+    }
+    
+     
+    /* Style the indicator (dot/circle) */
+    .container .checkmark:after {
+         top: 9px;
+        left: 9px;
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        background: white;
+    } 
+.steen { 
+padding-top:10px;
+} 
+.papier { 
+padding-top:10px;
+}
+ 
+.schaar { 
+padding-top:10px;
+}
+ 
+
+ 
+    </style> 
+    
+
+<body>
+
+ 
+    
+<label class="container"> 
+  <input type="radio" checked="checked" name="radio">   
+  <span class="checkmark"> <p class="steen">   ✊ </p> </span>
+</label> 
+<label class="container"> 
+  <input type="radio" name="radio">    
+  <span class="checkmark"> <p class="papier"> ✋   </p> </span>
+</label>
+<label class="container">   
+  <input type="radio" name="radio">  
+  <span class="checkmark">  <p class="schaar">  ✌️</p> </span>
+</label>
+ 
+</body>
+</html>

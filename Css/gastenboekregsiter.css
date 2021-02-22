@@ -1,0 +1,286 @@
+@charset "UTF-8";
+:root {
+ --blue: #1EBCDE;   
+ --geel: #FFD40C; 
+ --black: #000000; 
+ --font: 'Roboto', sans-serif; 
+
+}
+ body { 
+    background-color: var(--blue);  
+    padding:0; 
+    margin:0;
+ }
+ 
+ html {
+    margin: 0px; 
+    background-size: cover;
+    background-repeat: no-repeat;  
+    scroll-behavior: smooth; 
+    padding:0; 
+    margin:0; 
+    } 
+
+/* header */
+h1 { 
+    color:var(--geel);; 
+    margin: 0 auto; 
+    text-align:center;
+    font-family:  var(--font);
+    font-size:34px; 
+    padding-top:15px; 
+    margin-left:12vw; 
+    font-weight:300;
+} 
+ 
+
+/* dit is voor de form */
+
+.registeerhier { 
+color:var(--black); 
+font-family: var(--font); 
+font-size:18px; 
+padding-bottom:10px; 
+padding-top:10px;
+} 
+
+.noregister { 
+    color:var(--black);  
+    text-align: center; 
+    font-size:18px; 
+    text-decoration:1px solid black; 
+    font-family:  var(--font);  
+   
+}  
+
+p { 
+    margin:0 auto;  
+    color:var(--black); 
+    text-align:center; 
+    font-family: var(--font);
+    font-size:18px;
+} 
+ 
+.gebruikersnaaminput {  
+border:1px solid black; 
+height:30px; 
+width:12vw; 
+border-radius: 10px; 
+background-color:var(--blue); 
+color:var(--geel);  
+font-family: var(--font); 
+font-size:15px;   
+text-align: center;
+} 
+
+
+
+.wachtwoordinput {  
+    border:1px solid black; 
+    height:30px; 
+    width:12vw; 
+    border-radius: 10px; 
+    background-color:var(--blue); 
+    color:var(--geel);  
+    font-family: var(--font); 
+    font-size:15px;   
+    text-align: center;
+    } 
+form {  
+     
+    margin:0 auto; 
+    text-align:center;  
+} 
+  
+.formulier { 
+    text-align:left; 
+    height:400px; 
+    width:300px; 
+    border-radius: 10px;
+    background-color: var(--geel); 
+    border: 1px solid black; 
+    margin-left:4vw; 
+   
+}
+
+.knopregister  a { 
+color:var(--geel);  
+text-align: center; 
+font-size:16px; 
+text-decoration:underline; 
+font-family: var(--font); 
+cursor: pointer; 
+
+}   
+
+.knopregister { 
+    text-align: center; 
+    font-size:16px; 
+    text-decoration:none; 
+    font-family: var(--font); 
+    cursor: pointer; 
+    background-color:var(--blue); 
+    width: 100px;
+    height:30px; 
+    border:1px solid black;  
+    color:var(--geel);
+    border-radius: 10px;  
+    
+    }   
+
+    .knopterug { 
+        text-align: center; 
+        font-size:16px; 
+        text-decoration:none; 
+        font-family: var(--font); 
+        cursor: pointer; 
+        background-color:var(--blue); 
+        width: 200px;
+        height:45px; 
+        border:1px solid black;  
+        color:var(--geel);
+        border-radius: 10px;  
+        }  
+     
+        .knopterug  a { 
+            color:var(--geel);  
+            text-align: center; 
+            font-size:17px; 
+            text-decoration:none; 
+            font-family: var(--font); 
+            cursor: pointer; 
+
+            }   
+
+.inlogknop {  
+    border-radius: 10px; 
+    width: 100px;
+    height:30px;
+    color:var(--geel);  
+    text-align: center; 
+    font-size:16px; 
+    text-decoration:none; 
+    font-family: var(--font); 
+    cursor: pointer; 
+    background-color:var(--blue); 
+    border:1px solid black;
+}
+
+
+/*  einde van de form */ 
+ 
+
+/* golven aan de rechter kant */
+
+ 
+
+.flex-container { 
+display:flex; 
+flex-direction: row; 
+flex-wrap: nowrap;  
+justify-content: flex-end;
+align-items: start;  
+align-content: normal; 
+margin:auto;  
+ 
+
+}
+ 
+
+.golf { 
+    text-align:right !important; 
+    display: block; 
+    float:right;
+    margin:auto;
+    width: auto; 
+    height:auto; 
+}    
+
+ 
+
+
+
+
+/* dit is voor het plaatje van de gebruiker */ 
+
+.loginuser  { 
+height:200px !important; 
+width:200px !important; 
+border-radius:10px;
+
+}
+
+.plaatje { 
+height:500px; 
+width:500px; 
+border-radius:10px;  
+margin: 0 auto; 
+text-align: center;
+display:  block; 
+ 
+ 
+ 
+} 
+
+ 
+ 
+
+/* dit is voor de menu */
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 300px; 
+  
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px; 
+     
+  }
+  
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+  
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  } 
+  .menuknop { 
+  float:right;
+  }
+   
+   
+ /* responsive */
+  @media only screen and (max-height: 1080px) {   
+    .golf { 
+    text-align:right !important; 
+    display: block; 
+    float:right;
+    margin:auto;
+    width: auto; 
+    height:1006px; 
+
+    } 
+
+  }
