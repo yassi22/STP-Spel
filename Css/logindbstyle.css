@@ -267,6 +267,41 @@ display:  block;
 
   } 
   
+}  
+
+
+/* responsive voor de  Samsung galaxy s9 */
+@media only screen and (max-height: 740px) {   
+
+  .golf   { 
+    display:none;
+  } 
+
+ .plaatje { 
+   height: 360px;
+   width: 360px; 
+   padding-top:10px;
+ } 
+
+ .formulier { 
+  margin: 0 auto;
+  display:block;  
+  text-align:center;
+ } 
+ h1 { 
+   font-size:25px; 
+   margin: 0 auto; 
+   text-align: center;  
+   padding-bottom:10px; 
+
+
+ } 
+
+ .gebruikersnaaminput {  
+ width: 200px;
+
+  } 
+  
 } 
 
  /* responive is voor de iphone 6/7/8 */
