@@ -1,5 +1,5 @@
 # STP-Spel
 Het Steen-Papier-Schaar spel
-Dit is een steen papier schaar spel met een plog 
+Dit is een steen papier schaar spel met een blog
 
-Om het zelf te spelen download de files en de databas. Daarna maak je een user aan en kan je spelen
+
