@@ -21,7 +21,7 @@ if ($_SESSION['ingelogd'] != true) {
 </head> 
 <script>  
 function openNav() {
-  document.getElementById("mySidenav").style.width = "300px";
+  document.getElementById("mySidenav").style.width = "360px";
 }
 
 function closeNav() {
