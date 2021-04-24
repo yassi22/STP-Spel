@@ -432,7 +432,7 @@ padding-top:50px;
    
   
   /* responsive s9 */ 
-  @media only screen and (min-width: 360px) {    
+  @media only screen and (min-width: 360px) and (max-width:1920px) {    
  .golf { 
    display:none !important; 
 }
