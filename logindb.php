@@ -63,9 +63,10 @@ function closeNav() {
 
 
 <main>  
+ 
 
-<section class="formulier"> 
-<form method="POST"> 
+<section class="formulier">  
+<form method="POST">  
 <?php echo $error; ?> <br> 
 <p class="loginhier">Login hier: </p>
 <p>Gebruikersnaam</p><br> 
@@ -79,13 +80,13 @@ function closeNav() {
  
 <button class="knopregister"><a href="logindbregister.php">Registeer</a></button> 
 
-</form> 
+</form>  
 
 </section>   
-
 <article>
  <img src="img/userlogin.png" class="plaatje" alt="gebruiker login"> 
 </article>
+
 	</main>
 
 </body>
