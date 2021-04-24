@@ -430,37 +430,58 @@ padding-top:50px;
 } 
    
    
- /* responsive */
-  /* @media only screen and (max-width: 1920px) {   
-    .golf { 
-    text-align:right !important; 
-    display: block; 
-    float:right;
-    margin:auto;
-    width: auto; 
-    height:1006px; 
-
-    }  
-
-    .golf2 { 
-        text-align:left !important; 
-        display: block; 
-        float:left;
-        margin:auto;
-        width: auto; 
-        height:1006px; 
-        transform: rotate(180deg);
-        }  
-    
-
-
-  }  */
-
   
-  /* responsive note 9 */ 
-  @media only screen and (max-width: 414px) {    
- .golf  div { display:none;}
- .golf2 div { display:none;}
+  /* responsive s9 */ 
+  @media only screen and (min-width: 360px) {    
+ .golf { 
+   display:none !important; 
+}
+ .golf2 {
+  display:none !important;
+} 
+  
+.sidenav{ 
+  width: 360px;
+} 
+
+h1 { 
+  display:none;
+} 
+
+.checkmark {  
+height: 150px;
+width: 150px; 
+display: inline-block;
+text-align: center;
+margin: 0 auto; 
+}  
+
+.schaar { 
+  padding-top:35px; 
+  font-size:50px;
+} 
+
+.steen { 
+  padding-top:35px; 
+  font-size:50px;
+}  
+
+.container { 
+  padding-left:30px;
+} 
+
+.inlogknop { 
+  text-align: center; 
+  display: block; 
+ margin: 0 auto; 
+}
+
+
+.papier { 
+  padding-top:35px; 
+  font-size:50px;
+}
+
   } 
 
  
