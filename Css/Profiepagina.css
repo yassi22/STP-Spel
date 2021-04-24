@@ -65,7 +65,7 @@ p {
 .gebruikersnaaminput {  
 border:1px solid black; 
 height:30px; 
-width:11vw; 
+max-width:11vw; 
 border-radius: 10px; 
 background-color:var(--blue); 
 color:var(--geel);  
@@ -321,7 +321,7 @@ padding-top:50px;
 text-align: left;
 border:1px solid black; 
 height:auto;
-width: 200px; 
+width: 300px; 
 margin-left:10vw; 
 border-radius: 10px; 
 background-color: var(--geel);   
@@ -343,8 +343,9 @@ display:none;
 }
  
 .Scorenboard { 
-text-align: left; 
-
+text-align: left;  
+ position: relative; 
+ bottom:400px;
 }
 
 
