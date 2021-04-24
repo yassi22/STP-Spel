@@ -430,56 +430,7 @@ padding-top:50px;
 } 
    
    
- /* responsive */
-  @media only screen and (max-height: 1080px) {   
-    .golf { 
-    text-align:right !important; 
-    display: block; 
-    float:right;
-    margin:auto;
-    width: auto; 
-    height:1006px; 
-
-    }  
-
-    .golf2 { 
-        text-align:left !important; 
-        display: block; 
-        float:left;
-        margin:auto;
-        width: auto; 
-        height:1006px; 
-        transform: rotate(180deg);
-        }  
-    
-
-
-  } 
-
-
-  @media only screen and (max-height: 1000px) { 
-
-    .golf { 
-      text-align:right !important; 
-      display: block; 
-      float:right;
-      margin:auto;
-      width: auto; 
-      height:826px; 
-  
-      }  
-  
-      .golf2 { 
-          text-align:left !important; 
-          display: block; 
-          float:left;
-          margin:auto;
-          width: auto; 
-          height: 826px; 
-          transform: rotate(180deg);
-          }  
-      
-  }  
+ 
 /* menu resposive */ 
 
   @media screen and (max-height: 450px) {

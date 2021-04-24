@@ -431,7 +431,7 @@ padding-top:50px;
    
    
  /* responsive */
-  @media only screen and (max-width: 1920px) {   
+  /* @media only screen and (max-width: 1920px) {   
     .golf { 
     text-align:right !important; 
     display: block; 
@@ -454,9 +454,15 @@ padding-top:50px;
     
 
 
+  }  */
+
+  
+  /* responsive note 9 */ 
+  @media only screen and (max-width: 414px) {    
+ .golf  div { display:none;}
+ .golf2 div { display:none;}
   } 
 
- 
  
 /* menu resposive */ 
 

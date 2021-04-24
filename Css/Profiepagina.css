@@ -348,20 +348,3 @@ text-align: left;
 }
 
 
-
-  
- 
-   
- /* responsive */
-  @media only screen and (max-height: 1080px) {   
-    .golf { 
-    text-align:right !important; 
-    display: block; 
-    float:right;
-    margin:auto;
-    width: auto; 
-    height:909px; 
-
-    } 
-
-  }
