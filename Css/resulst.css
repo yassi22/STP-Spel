@@ -428,8 +428,12 @@ text-align: center;
 display: block; 
 padding-top:50px;
 } 
-   
-   
+    
+/* Resultaat delete knop */ 
+  
+   #text{ 
+     color:white; 
+   }
  
 /* menu resposive */ 
 

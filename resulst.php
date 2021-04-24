@@ -83,7 +83,9 @@ if($conn->connect_error) {
       echo "<p>Resultaat:Speler</p>".$row['Speler']."<br>"."</br>";     
       echo "<p>  </p>".$row['win'];
       echo "<p>  </p>".$row['lose'];
-      echo "<p>  </p>".$row['draw']; 
+      echo "<p>  </p>".$row['draw'];  
+
+      echo "<br>"; 
       ?><a href="Deletescore.php?ID=<?php echo $row["ID"]; ?>">Delete</a> <?php
   
     
@@ -161,21 +163,21 @@ $intotaal = max($row3['STEEN'] ,$row4['PAPIER'] ,$row5['SCHAAR'] );
  
     if ($intotaal == $row4['PAPIER']){   
     
-      echo "Papier is het meeste gekozen waarde";  
+      echo "<p>Papier is het meeste gekozen waarde</p>";  
       echo "<br><br>"; 
 
     } elseif  ($intotaal == $row3['STEEN'] )  { 
-      echo "Steen is het meest gekozen waarde";   
+      echo "<p>Steen is het meest gekozen waarde</p>";   
       echo "<br><br>";
     }  
 
     elseif ($intotaal == $row5['SCHAAR']) { 
-      echo "Schaar is het meest gekozen waarde";  
+      echo "<p> Schaar is het meest gekozen waarde </p>";  
       echo "<br><br>";
     }   
 
     else { 
-    echo "Alle waardes zijn het zelfde";
+    echo "<p>Alle waardes zijn het zelfde</p>";
     }   
 
  
