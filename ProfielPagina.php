@@ -95,7 +95,7 @@ if($conn->connect_error) {
 
 <script>  
 function openNav() {
-  document.getElementById("mySidenav").style.width = "250px";
+  document.getElementById("mySidenav").style.width = "360px";
 }
 
 function closeNav() {
@@ -131,7 +131,25 @@ window.onclick = function(event) {
 </section>   
 
     <h1>Welkom op de Profiel Pagina</h1> 
+ 
 
+
+    <section> 
+		<div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a> 
+            <a href="ProfielPagina.php">Profiel Pagina</a> 
+             <hr>
+            <a href="ingelogd.php">Het spel</a> 
+            <hr>
+            <a href="GastenBoeklogin.php">Gastenboek</a> 
+            <hr>
+            <a href="resulst.php">Resultaten</a>  
+            <hr>  
+            <img src="img/menuplaatje.png" class="menuplaatje" alt="menu plaatje">
+		  </div>  
+      <span class="menuknop" onclick="openNav()">&#9776;</span> 
+      </section> 
+      
     </header>   
 
 
