@@ -431,7 +431,7 @@ padding-top:50px;
    
    
  /* responsive */
-  @media only screen and (max-height: 1080px) {   
+  @media only screen and (max-width: 1920px) {   
     .golf { 
     text-align:right !important; 
     display: block; 
@@ -456,30 +456,8 @@ padding-top:50px;
 
   } 
 
-
-  @media only screen and (max-height: 1000px) { 
-
-    .golf { 
-      text-align:right !important; 
-      display: block; 
-      float:right;
-      margin:auto;
-      width: auto; 
-      height:826px; 
-  
-      }  
-  
-      .golf2 { 
-          text-align:left !important; 
-          display: block; 
-          float:left;
-          margin:auto;
-          width: auto; 
-          height: 826px; 
-          transform: rotate(180deg);
-          }  
-      
-  }  
+ 
+ 
 /* menu resposive */ 
 
   @media screen and (max-height: 450px) {
