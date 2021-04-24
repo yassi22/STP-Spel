@@ -13,7 +13,7 @@
 </head> 
 <script>  
 function openNav() {
-  document.getElementById("mySidenav").style.width = "300px";
+  document.getElementById("mySidenav").style.width = "360px";
 }
 
 function closeNav() {
@@ -177,7 +177,7 @@ $intotaal = max($row3['STEEN'] ,$row4['PAPIER'] ,$row5['SCHAAR'] );
     }   
 
     else { 
-    echo "<p>Alle waardes zijn het zelfde</p>";
+    echo "<p>Alle waardes zijn het zelfde</p> ";
     }   
 
  

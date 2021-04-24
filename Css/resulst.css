@@ -440,4 +440,30 @@ padding-top:50px;
   @media screen and (max-height: 450px) {
     .sidenav {padding-top: 15px;}
     .sidenav a {font-size: 18px;}
+  }  
+
+
+  /* responsive s9 */ 
+  @media only screen and (min-width: 360px) and (max-width:1920px) {    
+    .golf { 
+      display:none !important; 
+   }
+    .golf2 {
+     display:none !important;
+   } 
+     
+   .sidenav{ 
+     width: 360px;
+   } 
+   
+     
+   
+   .inlogknop { 
+     text-align: center; 
+     display: block; 
+    margin: 0 auto;  
+    width: 100px;
+   height: 40px; 
+    
+   } 
   } 
