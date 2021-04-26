@@ -79,8 +79,8 @@ if($conn->connect_error) {
   $sql = "SELECT * FROM Resultaten"; 
   if($result = $conn->query($sql)) { 
     while($row = $result->fetch_array()) { 
-      echo "<p>Resultaat:PC</p>".$row['PC']."</br>"."</br>"; 
-      echo "<p>Resultaat:Speler</p>".$row['Speler']."<br>"."</br>";     
+      echo "<p>Resultaat:PC:</p>"."<p class='computer'>".$row['PC']."</p>"."</br>"."</br>"; 
+      echo "<p>Resultaat:Speler:</p>"."<p class='speler'>".$row['Speler']."</p>"."<br>"."</br>";     
       echo "<p class='Won'>".$row['win']. "</p>";
       echo "<p class='Lose'>".$row['lose']. "</p>";
       echo "<p class='Draw'>".$row['draw']. "</p>";
@@ -113,11 +113,11 @@ if($conn->connect_error) {
  
     if ($row['Verloren'] > $row2['Gewonnen']){   
     
-      echo "PC Wint het meest"; 
+      echo "<p class='pcwintmeest'>PC Wint het meest</p>"; 
       
       } elseif ($row2['Gewonnen'] > $row['Verloren']){   
       
-      echo "De Speler wint het meest";  
+      echo "<p class='spelerwintmeest'>De Speler wint het meest</p>";  
       
     }    
     

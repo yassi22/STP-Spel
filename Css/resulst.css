@@ -365,7 +365,7 @@ background-color: var(--donkerblue);
 /* Resultaat gewonnen */ 
 
 .Won { 
-  color:rgb(4, 61, 4); 
+  color:rgb(0, 107, 0); 
    
 } 
 
@@ -383,7 +383,42 @@ a{
  margin: 0 auto;
   display:block;
   font-family: var(--font);  
+} 
+
+.speler{ 
+  text-align: center;
+  color:black; 
+  font-family: var(--font);   
+  margin: 0 auto;  
+  display: block;
+} 
+
+.computer{ 
+  text-align: center;
+  color:black; 
+  font-family: var(--font);   
+  margin: 0 auto;  
+  display: block;
+} 
+
+.spelerwintmeest{ 
+  text-align: center;
+  color:black; 
+  font-family: var(--font);   
+  margin: 0 auto;  
+  display: block;
+} 
+
+
+.pcwintmeest{ 
+  text-align: center;
+  color:black; 
+  font-family: var(--font);   
+  margin: 0 auto;  
+  display: block;
 }
+ 
+ 
  
 
 
