@@ -182,11 +182,6 @@ window.onclick = function(event) {
 </section>  
   
 
-<article>
- <img src="img/userlogin.png" class="plaatje" alt="gebruiker login"> 
-</article>  
-
-
 
 
 <br>
@@ -253,6 +248,9 @@ $conn->close();
 </article>
 </section> 
 
+<article>
+ <img src="img/userlogin.png" class="plaatje" alt="gebruiker login"> 
+</article>  
 
 
 
