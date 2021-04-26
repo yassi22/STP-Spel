@@ -42,7 +42,6 @@ h2 {
     font-family:  var(--font);
     font-size:30px; 
     padding-top:15px; 
-    margin-left:12vw; 
     font-weight:300; 
     padding-bottom:20px;
 }
@@ -169,7 +168,7 @@ cursor: pointer;
 .inlogknop {  
     border-radius: 10px; 
     width: 100px;
-    height:30px;
+    height:40px;
     color:var(--blue);  
     text-align: center;  
     margin: 0 auto; 
@@ -428,11 +427,21 @@ text-align: center;
 display: block; 
 padding-top:50px;
 } 
-   
+@media only screen and (max-width:1920px) {      
+  .golf { 
+  height: 966px; 
+
+  } 
+  .golf2 { 
+    height: 966px;
+  }
+} 
+
+
    
   
   /* responsive s9 */ 
-  @media only screen and (min-width: 360px) and (max-width:1920px) {    
+  @media only screen and (min-width: 360px) and (max-width:1919px) {    
  .golf { 
    display:none !important; 
 }
