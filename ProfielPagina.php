@@ -126,9 +126,7 @@ window.onclick = function(event) {
 <body>   
 <header>   
 
-<section>
- <div> <img src="img/golf.png" class="golf" alt="golf">   </div>
-</section>   
+ 
 
     <h1>Welkom op de Profiel Pagina</h1> 
  
