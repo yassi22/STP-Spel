@@ -23,10 +23,7 @@ function closeNav() {
 <body>   
 <header>   
 
-<section>
- <div> <img src="img/golf.png" class="golf" alt="golf">   </div> 
- <div> <img src="img/golf.png" class="golf2" alt="golf2">   </div>
-</section>    
+  
 
 <section> 
 		<div id="mySidenav" class="sidenav">
