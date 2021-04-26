@@ -164,12 +164,12 @@ border-radius:10px;
 max-width:500px;  
 max-height: clamp(200px, 400px, 500px);
 border-radius:10px;  
-/* margin: 0 auto; 
+margin: 0 auto; 
 text-align: center;
-display:  block;   */
-position: absolute;  
+display:  block;  
+/* position: absolute;  
  
-left:600px;
+left:600px; */
  
 } 
 
@@ -317,7 +317,19 @@ left:600px;
 
   } 
   
-}  
+}   
+
+
+@media only screen and (max-width: 1920px) {   
+
+  .golf  { 
+    height:966px;
+  }
+
+  
+  
+}   
+
 
 
 
