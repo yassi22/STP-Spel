@@ -13,7 +13,7 @@
 </head> 
 <script>  
 function openNav() {
-  document.getElementById("mySidenav").style.width = "300px";
+  document.getElementById("mySidenav").style.width = "360px";
 }
 
 function closeNav() {
@@ -33,13 +33,13 @@ function closeNav() {
 <section> 
 		<div id="mySidenav" class="sidenav">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a> 
-            <a href="Index.html">Profiel Pagina</a> 
+            <a href="ProfielPagina.php">Profiel Pagina</a> 
              <hr>
-            <a href="Over Mij.html">Het spel</a> 
+            <a href="ingelogd.php">Het spel</a> 
             <hr>
-            <a href="Portfolio.html">Gastenboek</a> 
+            <a href="GastenBoeklogin.php">Gastenboek</a> 
             <hr>
-            <a href="Contact.html">Resultaten</a>  
+            <a href="resulst.php">Resultaten</a>  
             <hr>  
             <img src="img/menuplaatje.png" class="menuplaatje" alt="menu plaatje">
 		  </div>  
@@ -79,11 +79,13 @@ if($conn->connect_error) {
   $sql = "SELECT * FROM Resultaten"; 
   if($result = $conn->query($sql)) { 
     while($row = $result->fetch_array()) { 
-      echo "<p>Resultaat:PC</p>".$row['PC']."</br>"."</br>"; 
-      echo "<p>Resultaat:Speler</p>".$row['Speler']."<br>"."</br>";     
-      echo "<p>  </p>".$row['win'];
-      echo "<p>  </p>".$row['lose'];
-      echo "<p>  </p>".$row['draw']; 
+      echo "<p>Resultaat:PC:</p>"."<p class='computer'>".$row['PC']."</p>"."</br>"."</br>"; 
+      echo "<p>Resultaat:Speler:</p>"."<p class='speler'>".$row['Speler']."</p>"."<br>"."</br>";     
+      echo "<p class='Won'>".$row['win']. "</p>";
+      echo "<p class='Lose'>".$row['lose']. "</p>";
+      echo "<p class='Draw'>".$row['draw']. "</p>";
+
+      echo "<br>"; 
       ?><a href="Deletescore.php?ID=<?php echo $row["ID"]; ?>">Delete</a> <?php
   
     
@@ -111,11 +113,11 @@ if($conn->connect_error) {
  
     if ($row['Verloren'] > $row2['Gewonnen']){   
     
-      echo "PC Wint het meest"; 
+      echo "<p class='pcwintmeest'>PC Wint het meest</p>"; 
       
       } elseif ($row2['Gewonnen'] > $row['Verloren']){   
       
-      echo "De Speler wint het meest";  
+      echo "<p class='spelerwintmeest'>De Speler wint het meest</p>";  
       
     }    
     
@@ -129,7 +131,9 @@ if($conn->connect_error) {
     WHERE CONCAT(PC,':',Speler ) like '%ock%'";
 
     $result3= $conn->query($sql3); 
-    $row3 = $result3->fetch_array();
+    $row3 = $result3->fetch_array(); 
+
+   
 
 
       $sql4 = "SELECT
@@ -161,21 +165,21 @@ $intotaal = max($row3['STEEN'] ,$row4['PAPIER'] ,$row5['SCHAAR'] );
  
     if ($intotaal == $row4['PAPIER']){   
     
-      echo "Papier is het meeste gekozen waarde";  
+      echo "<p>Papier is het meeste gekozen waarde</p>";  
       echo "<br><br>"; 
 
     } elseif  ($intotaal == $row3['STEEN'] )  { 
-      echo "Steen is het meest gekozen waarde";   
+      echo "<p>Steen is het meest gekozen waarde</p>";   
       echo "<br><br>";
     }  
 
     elseif ($intotaal == $row5['SCHAAR']) { 
-      echo "Schaar is het meest gekozen waarde";  
+      echo "<p> Schaar is het meest gekozen waarde </p>";  
       echo "<br><br>";
     }   
 
     else { 
-    echo "Alle waardes zijn het zelfde";
+    echo "<p>Alle waardes zijn het zelfde</p> ";
     }   
 
  

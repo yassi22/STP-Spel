@@ -262,25 +262,6 @@ display:  block;
     margin-left: 50px;
   }
   
-  @media screen and (max-height: 450px) {
-    .sidenav {padding-top: 15px;}
-    .sidenav a {font-size: 18px;}
-  } 
-  .menuknop { 
-  float:right;
-  }
+
    
    
- /* responsive */
-  @media only screen and (max-height: 1080px) {   
-    .golf { 
-    text-align:right !important; 
-    display: block; 
-    float:right;
-    margin:auto;
-    width: auto; 
-    height:1006px; 
-
-    } 
-
-  }

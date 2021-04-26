@@ -30,7 +30,7 @@ h1 {
     font-family:  var(--font);
     font-size:34px; 
     padding-top:15px; 
-    margin-left:14vw !important;
+   
     font-weight:300; 
     padding-bottom:20px;
 }  
@@ -362,8 +362,63 @@ background-color: var(--donkerblue);
 
 /* einde van de keuzes */
 
+/* Resultaat gewonnen */ 
+
+.Won { 
+  color:rgb(0, 107, 0); 
+   
+} 
+
+.Lose { 
+  color:rgb(168, 9, 9); 
+}   
+
+.Draw { 
+  color:rgb(228, 124, 5); 
+}
+ 
+a{ 
+  color:black; 
+ text-align: center; 
+ margin: 0 auto;
+  display:block;
+  font-family: var(--font);  
+} 
+
+.speler{ 
+  text-align: center;
+  color:black; 
+  font-family: var(--font);   
+  margin: 0 auto;  
+  display: block;
+} 
+
+.computer{ 
+  text-align: center;
+  color:black; 
+  font-family: var(--font);   
+  margin: 0 auto;  
+  display: block;
+} 
+
+.spelerwintmeest{ 
+  text-align: center;
+  color:black; 
+  font-family: var(--font);   
+  margin: 0 auto;  
+  display: block;
+} 
 
 
+.pcwintmeest{ 
+  text-align: center;
+  color:black; 
+  font-family: var(--font);   
+  margin: 0 auto;  
+  display: block;
+}
+ 
+ 
  
 
 
@@ -428,61 +483,42 @@ text-align: center;
 display: block; 
 padding-top:50px;
 } 
-   
-   
- /* responsive */
-  @media only screen and (max-height: 1080px) {   
-    .golf { 
-    text-align:right !important; 
-    display: block; 
-    float:right;
-    margin:auto;
-    width: auto; 
-    height:1006px; 
-
-    }  
-
-    .golf2 { 
-        text-align:left !important; 
-        display: block; 
-        float:left;
-        margin:auto;
-        width: auto; 
-        height:1006px; 
-        transform: rotate(180deg);
-        }  
     
-
-
-  } 
-
-
-  @media only screen and (max-height: 1000px) { 
-
-    .golf { 
-      text-align:right !important; 
-      display: block; 
-      float:right;
-      margin:auto;
-      width: auto; 
-      height:826px; 
+/* Resultaat delete knop */ 
   
-      }  
-  
-      .golf2 { 
-          text-align:left !important; 
-          display: block; 
-          float:left;
-          margin:auto;
-          width: auto; 
-          height: 826px; 
-          transform: rotate(180deg);
-          }  
-      
-  }  
+   #text{ 
+     color:white; 
+   }
+ 
 /* menu resposive */ 
 
   @media screen and (max-height: 450px) {
     .sidenav {padding-top: 15px;}
     .sidenav a {font-size: 18px;}
+  }  
+
+
+  /* responsive s9 */ 
+  @media only screen and (min-width: 360px) and (max-width:1920px) {    
+    .golf { 
+      display:none !important; 
+   }
+    .golf2 {
+     display:none !important;
+   } 
+     
+   .sidenav{ 
+     width: 360px;
+   } 
+   
+     
+   
+   .inlogknop { 
+     text-align: center; 
+     display: block; 
+    margin: 0 auto;  
+    width: 100px;
+   height: 40px; 
+    
+   } 
   } 

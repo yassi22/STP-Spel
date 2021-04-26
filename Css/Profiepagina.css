@@ -65,7 +65,7 @@ p {
 .gebruikersnaaminput {  
 border:1px solid black; 
 height:30px; 
-width:11vw; 
+max-width:11vw; 
 border-radius: 10px; 
 background-color:var(--blue); 
 color:var(--geel);  
@@ -150,16 +150,7 @@ cursor: pointer;
 /* dit is voor de form */ 
  
 
-
-.golf { 
-    text-align:right !important; 
-    display: block; 
-    float:right;
-    margin:auto;
-    width: auto; 
-    height:auto; 
-}    
-
+ 
  
 
 
@@ -321,7 +312,7 @@ padding-top:50px;
 text-align: left;
 border:1px solid black; 
 height:auto;
-width: 200px; 
+width: 300px; 
 margin-left:10vw; 
 border-radius: 10px; 
 background-color: var(--geel);   
@@ -343,25 +334,9 @@ display:none;
 }
  
 .Scorenboard { 
-text-align: left; 
-
+text-align: left;  
+ position: relative; 
+ bottom:400px;
 }
 
 
-
-  
- 
-   
- /* responsive */
-  @media only screen and (max-height: 1080px) {   
-    .golf { 
-    text-align:right !important; 
-    display: block; 
-    float:right;
-    margin:auto;
-    width: auto; 
-    height:909px; 
-
-    } 
-
-  }

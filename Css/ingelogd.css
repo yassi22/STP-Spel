@@ -42,7 +42,6 @@ h2 {
     font-family:  var(--font);
     font-size:30px; 
     padding-top:15px; 
-    margin-left:12vw; 
     font-weight:300; 
     padding-bottom:20px;
 }
@@ -169,7 +168,7 @@ cursor: pointer;
 .inlogknop {  
     border-radius: 10px; 
     width: 100px;
-    height:30px;
+    height:40px;
     color:var(--blue);  
     text-align: center;  
     margin: 0 auto; 
@@ -428,58 +427,76 @@ text-align: center;
 display: block; 
 padding-top:50px;
 } 
+@media only screen and (max-width:1920px) {      
+  .golf { 
+  height: 966px; 
+
+  } 
+  .golf2 { 
+    height: 966px;
+  }
+} 
+
+
    
-   
- /* responsive */
-  @media only screen and (max-height: 1080px) {   
-    .golf { 
-    text-align:right !important; 
-    display: block; 
-    float:right;
-    margin:auto;
-    width: auto; 
-    height:1006px; 
+  
+  /* responsive s9 */ 
+  @media only screen and (min-width: 360px) and (max-width:1919px) {    
+ .golf { 
+   display:none !important; 
+}
+ .golf2 {
+  display:none !important;
+} 
+  
+.sidenav{ 
+  width: 360px;
+} 
 
-    }  
+h1 { 
+  display:none;
+} 
 
-    .golf2 { 
-        text-align:left !important; 
-        display: block; 
-        float:left;
-        margin:auto;
-        width: auto; 
-        height:1006px; 
-        transform: rotate(180deg);
-        }  
-    
+.checkmark {  
+height: 150px;
+width: 150px; 
+display: inline-block;
+text-align: center;
+margin: 0 auto; 
+}  
 
+.schaar { 
+  padding-top:35px; 
+  font-size:50px;
+} 
+
+.steen { 
+  padding-top:35px; 
+  font-size:50px;
+}  
+
+.container { 
+  padding-left:30px;
+} 
+
+.inlogknop { 
+  text-align: center; 
+  display: block; 
+ margin: 0 auto;  
+ width: 100px;
+height: 40px; 
+ 
+}
+
+
+.papier { 
+  padding-top:35px; 
+  font-size:50px;
+}
 
   } 
 
-
-  @media only screen and (max-height: 1000px) { 
-
-    .golf { 
-      text-align:right !important; 
-      display: block; 
-      float:right;
-      margin:auto;
-      width: auto; 
-      height:826px; 
-  
-      }  
-  
-      .golf2 { 
-          text-align:left !important; 
-          display: block; 
-          float:left;
-          margin:auto;
-          width: auto; 
-          height: 826px; 
-          transform: rotate(180deg);
-          }  
-      
-  }  
+ 
 /* menu resposive */ 
 
   @media screen and (max-height: 450px) {

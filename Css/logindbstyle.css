@@ -63,7 +63,7 @@ p {
 .gebruikersnaaminput {  
 border:1px solid black; 
 height:30px; 
-width:12vw; 
+width: 200px;
 border-radius: 10px; 
 background-color:var(--blue); 
 color:var(--geel);  
@@ -72,7 +72,7 @@ font-size:15px;
 text-align: center;
 }
 form {  
-     
+      
     margin:0 auto; 
     text-align:center;  
 }  
@@ -144,7 +144,10 @@ cursor: pointer;
     float:right;
     margin:auto;
     width: auto; 
-    height:auto; 
+    height:auto;  
+/* height: clamp( 200px, 1080px, 1440px); */
+
+
 }    
 
   
@@ -157,15 +160,16 @@ border-radius:10px;
 
 }
 
-.plaatje { 
-height:500px; 
-width:500px; 
+.plaatje {  
+max-width:500px;  
+max-height: clamp(200px, 400px, 500px);
 border-radius:10px;  
 margin: 0 auto; 
 text-align: center;
-display:  block; 
+display:  block;  
+/* position: absolute;  
  
- 
+left:600px; */
  
 } 
 
@@ -211,7 +215,8 @@ display:  block;
   
   @media screen and (max-height: 450px) {
     .sidenav {padding-top: 15px;}
-    .sidenav a {font-size: 18px;}
+    .sidenav a {font-size: 18px;} 
+    .golf {display: none;}
   }  
 
 
@@ -221,31 +226,124 @@ display:  block;
    
    
  /* responsive */
-  @media only screen and (max-height: 1080px) {   
-    .golf { 
-    text-align:right !important; 
-    display: block; 
-    float:right;
-    margin:auto;
-    width: auto; 
-    height:1006px; 
+  
+/* de golf verwijderen bij mobile screens */ 
 
-    }  
+ @media only screen and (max-width: 200px ) {  
+ .golf {  display:none}
+} 
+ 
+@media only screen and (max-width: 300px ) {  
+  .golf {  display:none}
+ } 
+
+ @media only screen and (max-width: 400px ) {  
+  .golf {  display:none}
+ } 
+ 
+ @media only screen and (max-width: 500px ) {  
+  .golf {  display:none}
+ }  
+ @media only screen and (max-width: 600px ) {  
+  .golf {  display:none}
+ } 
+
+ @media only screen and (max-width: 700px ) {  
+  .golf {  display:none}
+ }  
+ @media only screen and (max-width: 800px ) {  
+  .golf {  display:none}
+ } 
 
  
+    /* responive is voor de iphone 6/7/8 */
+    @media only screen and (max-width: 736px) {   
 
-  } 
- /* responsive voor de iphone x */
-  @media only screen and (max-height: 812px) {   
+      .golf {display: none;}
 
-  .golf   { 
-    display:none;
-  } 
+     .plaatje { 
+       height: 275px;
+       width: 275px; 
+       padding-top:10px;
+     } 
+    
+     .formulier { 
+      margin: 0 auto;
+      display:block;  
+      text-align:center;
+     } 
+     h1 { 
+       font-size:25px; 
+       margin: 0 auto; 
+       text-align: center;  
+       padding-bottom:10px; 
+    
+    
+     } 
+    
+     .gebruikersnaaminput {  
+     width: 200px;
+    
+      } 
+    } 
+  
+ /* responsive voor de ipad 10.5inch */
+  @media only screen and (max-width: 1000px) {   
+
+  .golf {display: none;} 
 
  .plaatje { 
-   height: 275px;
-   width: 275px; 
+   height: 375px;
+   width: 375px; 
+   padding-top:100px;
+ } 
+
+ .formulier { 
+  margin: 0 auto;
+  display:block;  
+  text-align:center;
+ } 
+ h1 { 
+   font-size:30px; 
+   margin: 0 auto; 
+   text-align: center;  
+   padding-bottom:10px; 
+
+
+ } 
+
+ .gebruikersnaaminput {  
+ width: 200px;
+
+  } 
+  
+}   
+
+
+@media only screen and (max-width: 1920px) {   
+
+  .golf  { 
+    height:966px;
+  }
+
+  
+  
+}   
+
+
+
+
+
+/* responsive voor de  Samsung galaxy s9 */
+@media only screen and (max-width: 360px) {   
+
+ 
+  .golf {display: none;}
+ .plaatje { 
+   height: 300px;
+   width: 300px; 
    padding-top:10px;
+   display: block;
  } 
 
  .formulier { 
@@ -268,113 +366,42 @@ display:  block;
   } 
   
 } 
+ 
+/*       responsive voor de galaxy note 3       */
+@media only screen and (max-height:640px) {  
 
- /* responive is voor de iphone 6/7/8 */
-  @media only screen and (max-height: 736px) {   
-
-    .golf   { 
-      display:none;
-    } 
-  
-   .plaatje { 
-     height: 275px;
-     width: 275px; 
-     padding-top:10px;
-   } 
-  
-   .formulier { 
-    margin: 0 auto;
-    display:block;  
-    text-align:center;
-   } 
-   h1 { 
-     font-size:25px; 
-     margin: 0 auto; 
-     text-align: center;  
-     padding-bottom:10px; 
-  
-  
-   } 
-  
-   .gebruikersnaaminput {  
-   width: 200px;
-  
-    } 
+  .golf {display: none;}
+  .plaatje { 
+     display: none;
   } 
-  
-
-   /* responive voor de iphone 5/se*/
-   @media only screen and (max-height: 736px) {   
-
-    .golf   { 
-      display:none;
-    } 
-  
-   .plaatje { 
-  display:none;
-   } 
-  
-   .formulier {  
-  
-    margin: 0 auto;
-    display:block;  
-    text-align:center;
-   } 
-   h1 { 
-     font-size:25px; 
-     margin: 0 auto; 
-     text-align: center;  
-     padding-bottom:10px; 
-  
-  
-   } 
-  
-   .gebruikersnaaminput {  
-   width: 200px;
-  
-    } 
-  }  
-
-
-  /* responive voor de iphone 5/se*/
-  @media only screen and (max-height: 736px) {   
-
-    .golf   { 
-      display:none;
-    } 
-  
-   .plaatje { 
-  display:none;
-   } 
-  
-   .formulier {  
-  
-    margin: 0 auto;
-    display:block;  
-    text-align:center;
-   } 
-   h1 { 
-     font-size:25px; 
-     margin: 0 auto; 
-     text-align: center;  
-     padding-bottom:10px; 
-  
-  
-   } 
-  
-   .gebruikersnaaminput {  
-   width: 200px;
-  
-    }  
+ 
+  .formulier { 
+   margin: 0 auto;
+   display:block;  
+   text-align:center;
   } 
+  h1 { 
+    font-size:25px; 
+    margin: 0 auto; 
+    text-align: center;  
+    padding-bottom:10px; 
+ 
+ 
+  } 
+ 
+  .gebruikersnaaminput {  
+  width: 200px;
+
+
+}
+
+ 
 
       /* responive  voor de google pixel 2 xl*/
   @media only screen and (max-height: 823px) {   
 
-    .golf   { 
-    display:none;
-    } 
-  
+ 
+    .golf {display: none;}
    .plaatje {  
     padding-top:10px;
    height:380px; 
@@ -401,77 +428,45 @@ display:  block;
   
     } 
   }  
-
-
-       /* responive voor de laptop with hidpi */
-       @media only screen and (max-height:1440px) {   
-
-        .golf   { 
-        height:100%;
-        } 
-      
-       .plaatje {  
-        padding-top:10px;
-       height:380px; 
-       width:380px;
-       } 
-      
-       .formulier {  
-        padding-bottom:10px;
-        margin: 0 auto;
-        display:block;  
-        text-align:center;
-       } 
-       h1 { 
-         font-size:25px; 
-         margin: 0 auto; 
-         text-align: center;  
-         padding-bottom:10px; 
-      
-      
-       } 
-      
-       .gebruikersnaaminput {  
-       width: 200px;
-      
-        } 
-      }  
-
-
-
-             /* responive voor de laptop with hidpi */
-             @media only screen and (max-height:1440px) {   
-
-              .golf   { 
-              height:100%;
-              } 
-            
-             .plaatje {  
-              padding-top:10px;
-             height:380px; 
-             width:380px;
-             } 
-            
-             .formulier {  
-              padding-bottom:10px;
-              margin: 0 auto;
-              display:block;  
-              text-align:center;
-             } 
-             h1 { 
-               font-size:25px; 
-               margin: 0 auto; 
-               text-align: center;  
-               padding-bottom:10px; 
-            
-            
-             } 
-            
-             .gebruikersnaaminput {  
-             width: 200px;
-            
-              } 
-            } 
-       
  
 
+  /* responsive voor de  ipad pro */
+@media only screen and (max-width: 1024px) {   
+
+ 
+  .golf { 
+     display:none !important;
+  } 
+
+ .plaatje { 
+   height: 350px;
+   width: 350px; 
+   padding-top:10px;
+   display: none;
+ } 
+
+ .formulier { 
+  margin: 0 auto;
+  display:block;  
+  text-align:center;
+ } 
+ h1 { 
+   font-size:25px; 
+   margin: 0 auto; 
+   text-align: center;  
+   padding-bottom:10px; 
+
+
+ } 
+
+ .gebruikersnaaminput {  
+ width: 200px;
+
+  } 
+  
+} 
+ 
+
+   
+
+} 
