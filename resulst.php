@@ -81,9 +81,9 @@ if($conn->connect_error) {
     while($row = $result->fetch_array()) { 
       echo "<p>Resultaat:PC</p>".$row['PC']."</br>"."</br>"; 
       echo "<p>Resultaat:Speler</p>".$row['Speler']."<br>"."</br>";     
-      echo "<p>  </p>".$row['win'];
-      echo "<p>  </p>".$row['lose'];
-      echo "<p>  </p>".$row['draw'];  
+      echo "<p class='Won'>".$row['win']. "</p>";
+      echo "<p class='Lose'>".$row['lose']. "</p>";
+      echo "<p class='Draw'>".$row['draw']. "</p>";
 
       echo "<br>"; 
       ?><a href="Deletescore.php?ID=<?php echo $row["ID"]; ?>">Delete</a> <?php
@@ -131,7 +131,9 @@ if($conn->connect_error) {
     WHERE CONCAT(PC,':',Speler ) like '%ock%'";
 
     $result3= $conn->query($sql3); 
-    $row3 = $result3->fetch_array();
+    $row3 = $result3->fetch_array(); 
+
+   
 
 
       $sql4 = "SELECT

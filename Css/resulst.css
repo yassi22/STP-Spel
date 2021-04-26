@@ -30,7 +30,7 @@ h1 {
     font-family:  var(--font);
     font-size:34px; 
     padding-top:15px; 
-    margin-left:14vw !important;
+   
     font-weight:300; 
     padding-bottom:20px;
 }  
@@ -362,8 +362,28 @@ background-color: var(--donkerblue);
 
 /* einde van de keuzes */
 
+/* Resultaat gewonnen */ 
 
+.Won { 
+  color:rgb(4, 61, 4); 
+   
+} 
 
+.Lose { 
+  color:rgb(168, 9, 9); 
+}   
+
+.Draw { 
+  color:rgb(228, 124, 5); 
+}
+ 
+a{ 
+  color:black; 
+ text-align: center; 
+ margin: 0 auto;
+  display:block;
+  font-family: var(--font);  
+}
  
 
 
