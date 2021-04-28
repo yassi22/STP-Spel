@@ -104,7 +104,7 @@ text-align: left;
 /*  einde van de paneel */  
 
 
-/* De styling voor de berichten */
+/* De styling voor de berichten */ 
 
 .Berichten { 
 background-color:yellow;
@@ -114,7 +114,7 @@ border-radius:  10px ;
 height:auto; 
 width:auto; 
 max-width: 1200px; 
-max-height:400px;
+ 
  
 }  
  
@@ -126,7 +126,8 @@ max-height:400px;
 } 
 
 .reactie { 
-text-align: left; 
+text-align: left;  
+ 
 } 
 
 .bericht { 
@@ -173,10 +174,7 @@ text-align: left;
     }  
  
  
- 
- 
- 
-
+  
 /* golven aan de rechter kant */
 
   
