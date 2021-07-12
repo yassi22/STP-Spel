@@ -30,7 +30,8 @@ h1 {
     font-size:34px; 
     padding-top:15px; 
     margin-left:12vw; 
-    font-weight:300;
+    font-weight:300; 
+    padding-bottom:20px;
 } 
  
 
@@ -40,7 +41,8 @@ h1 {
 color:var(--black); 
 font-family: var(--font); 
 font-size:18px; 
-padding-bottom:10px;
+padding-bottom:10px; 
+ 
 } 
 
 .noregister { 
@@ -73,20 +75,23 @@ text-align: center;
 }
 form {  
       
-    margin:0 auto; 
-    text-align:center;  
+ 
+    text-align:center;   
+     
 }  
 
  
   
-.formulier { 
-    text-align:left; 
+.formulier {  
+  
+    text-align:center; 
     height:305px; 
     width:300px; 
     border-radius: 10px;
     background-color: var(--geel); 
-    border: 1px solid black; 
-    margin-left:4vw; 
+    border: 1px solid black;  
+    margin-left:4vw;
+   
    
 }
 
@@ -157,7 +162,7 @@ cursor: pointer;
 height:200px !important; 
 width:200px !important; 
 border-radius:10px;
-
+margin-right:4vw;
 }
 
 .plaatje {  
@@ -166,12 +171,24 @@ max-height: clamp(200px, 400px, 500px);
 border-radius:10px;  
 margin: 0 auto; 
 text-align: center;
-display:  block;  
+display:  block;   
+padding-top:10px;  
+ 
+ 
 /* position: absolute;  
  
 left:600px; */
  
-} 
+}  
+
+.wrapper {
+  text-align : center;
+}
+.Plaat, .Formulueren {
+  display: inline-block;
+  vertical-align: top; 
+  padding: 125px;
+}
 
  
  

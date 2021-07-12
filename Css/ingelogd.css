@@ -100,9 +100,8 @@ text-align: center;
     text-align: center;
     } 
 form {  
-    display:block;
-    margin:0 auto; 
-    text-align:center;  
+   
+    text-align:left;  
 } 
   
 .formulier { 
