@@ -226,8 +226,9 @@ echo "<br><br>";
 $sql = "SELECT * FROM Resultaten"; 
 if($result = $conn->query($sql)) { 
   while($row = $result->fetch_array()) { 
-    echo "<p>Resultaat:PC</p>".$row['PC']."</br>"."</br>"; 
-    echo "<p>Resultaat:Speler</p>".$row['Speler']."<br>"."</br>";     
+    echo "<p>Keuze:PC</p>".$row['PC']."</br>"."</br>"; 
+    echo "<p>Keuze:Speler</p>".$row['Speler']."<br>"."</br>";      
+    echo "<p>Resultaat van spel</p>";
     echo "<p>  </p>".$row['win'];
     echo "<p>  </p>".$row['lose'];
     echo "<p>  </p>".$row['draw']; 

@@ -309,7 +309,7 @@ padding-top:50px;
 /* dit is voor de score */ 
 
 .Score { 
-text-align: left;
+text-align: center;
 border:1px solid black; 
 height:auto;
 width: 300px; 
@@ -323,14 +323,14 @@ background-color: var(--geel);
 
 
 .Score p {  
-text-align: left; 
+text-align: center; 
 color:var(--blue);
 font-family: var(--font); 
 
 } 
 
 .Score hr { 
-display:none;
+display:block;
 }
  
 .Scorenboard { 
