@@ -140,22 +140,19 @@ cursor: pointer;
 
 /* golven aan de rechter kant */
 
- 
- 
+  
 
+ 
+ 
 .golf { 
     text-align:right !important; 
     display: block; 
     float:right;
     margin:auto;
     width: auto; 
-    height:auto;  
-/* height: clamp( 200px, 1080px, 1440px); */
-
-
-}    
-
-  
+    max-height: 100vh;
+    height: auto;  
+} 
 /* dit is voor het plaatje van de gebruiker */ 
 
 .loginuser  { 
@@ -282,7 +279,29 @@ left:600px; */
        height: 275px;
        width: 275px; 
        padding-top:10px;
+     }  
+
+     .wrapper { 
+       text-align: center;   
+       margin: 0 auto;  
+       display: block; 
+       overflow: hidden; 
+
+
      } 
+
+     .Plaat { 
+       display:none;
+     }  
+
+
+     .Formulueren { 
+       margin: 0 auto; 
+       display: block; 
+       text-align: center;
+     }
+
+
     
      .formulier { 
       margin: 0 auto;
@@ -337,16 +356,8 @@ left:600px; */
 }   
 
 
-@media only screen and (max-width: 1920px) {   
-
-  .golf  { 
-    height:966px;
-  }
-
-  
-  
-}   
-
+ 
+ 
 
 
 

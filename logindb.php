@@ -52,10 +52,16 @@ function closeNav() {
 </script>  
 <body>   
 <header>   
+ 
 
-<section>
+ 
+
+
+   <section>
  <div> <img src="img/golf.png" class="golf" alt="golf">   </div>
 </section>   
+ 
+
 
     <h1>Welkom op de login pagina</h1> 
 
