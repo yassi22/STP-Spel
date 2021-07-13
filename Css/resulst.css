@@ -401,7 +401,22 @@ a{
   font-family: var(--font);   
   margin: 0 auto;  
   display: block;
-} 
+}  
+
+
+
+.textvisbile {
+color:var(--geel);  
+font:16px;
+-webkit-text-stroke: 0.2px black;
+}  
+.player{ 
+  color:var(--donkerblue);  
+font:16px;
+-webkit-text-stroke: 0.2px black;
+}
+
+ 
 
 .spelerwintmeest{ 
   text-align: center;
