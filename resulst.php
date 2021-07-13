@@ -86,7 +86,7 @@ if($conn->connect_error) {
       echo "<p class='Draw'>".$row['draw']. "</p>";
 
       echo "<br>"; 
-      ?><a href="Deletescore.php?ID=<?php echo $row["ID"]; ?>">Delete</a> <?php
+      ?><a class="deletescore" href="Deletescore.php?ID=<?php echo $row["ID"]; ?>">Delete</a> <?php
   
     
       echo "<hr/>"; 
