@@ -172,12 +172,11 @@ margin:auto;
     float:right;
     margin:auto;
     width: auto; 
-    height:auto; 
+    max-height: 100vh;
+    height: auto;  
 }    
 
  
-
-
 
 
 /* dit is voor het plaatje van de gebruiker */ 
@@ -263,5 +262,12 @@ padding-top:50px;
 }  
 
   
- 
- 
+.wrapper {
+    text-align : center;
+  }
+  .Plaat, .Formulueren {
+    display: inline-block;
+    vertical-align: top; 
+    padding: 125px;
+  }
+  
