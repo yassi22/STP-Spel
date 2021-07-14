@@ -111,7 +111,8 @@ background-color:yellow;
 border:1px solid black; 
 margin: 0 auto;   
 border-radius:  10px ;  
-height:auto; 
+max-height: 100vh;
+height: auto;  
 width:auto; 
 max-width: 1200px; 
  
@@ -244,7 +245,12 @@ text-align: left;
  font-size:45px; 
   cursor:pointer;
   color:#2070BF;   
- 
+  padding-right:75px;  
+  
+} 
+
+.menuknop:hover{
+  color:var(--geel);
 }
 
 hr { 
@@ -267,4 +273,5 @@ padding-top:50px;
   @media screen and (max-height: 450px) {
     .sidenav {padding-top: 15px;}
     .sidenav a {font-size: 18px;}
-  } 
+  }  
+

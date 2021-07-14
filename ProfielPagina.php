@@ -141,7 +141,9 @@ window.onclick = function(event) {
             <hr>
             <a href="GastenBoeklogin.php">Gastenboek</a> 
             <hr>
-            <a href="resulst.php">Resultaten</a>  
+            <a href="resulst.php">Resultaten</a>   
+            <hr>  
+            <a href="uitloggen.php">Uitloggen</a>  
             <hr>  
             <img src="img/menuplaatje.png" class="menuplaatje" alt="menu plaatje">
 		  </div>  
@@ -175,7 +177,7 @@ window.onclick = function(event) {
         <button onclick="myFunction()" class="dropbtn">Wijzig gegevens</button>
         <div id="myDropdown" class="dropdown-content">
           <a href="updatepage.php">Wijzig je profiel gegevens</a>
-          <a href="registerupdate.php">Wijzig je username</a>
+          <a href="updatelogin.php">Wijzig je username</a>
           <a href="updategastenboek.php">Wijzig je gastenboek gegevens </a>
         </div>
       </div>   

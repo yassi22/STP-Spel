@@ -47,7 +47,9 @@ function closeNav() {
             <hr>
             <a href="GastenBoeklogin.php">Gastenboek</a> 
             <hr>
-            <a href="resulst.php">Resultaten</a>  
+            <a href="resulst.php">Resultaten</a>   
+            <hr>   
+            <a href="uitloggen.php">Uitloggen</a>  
             <hr>  
             <img src="img/menuplaatje.png" class="menuplaatje" alt="menu plaatje">
 		  </div>  
