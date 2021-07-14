@@ -152,7 +152,7 @@ window.onclick = function(event) {
 
 
 <main>  
-
+ 
 <section class="formulier"> 
 <form  method="POST">   
 <p> Vul hier je Profiel gevens in:
@@ -170,7 +170,7 @@ window.onclick = function(event) {
  <section>
 
 </section>    
-
+ 
 <div class="dropdown">
         <button onclick="myFunction()" class="dropbtn">Wijzig gegevens</button>
         <div id="myDropdown" class="dropdown-content">
@@ -181,8 +181,7 @@ window.onclick = function(event) {
       </div>   
 </section>  
   
-
-
+ 
 
 <br>
 
@@ -249,7 +248,7 @@ $conn->close();
 </article>
 </section> 
 
-<article>
+<article> 
  <img src="img/userlogin.png" class="plaatje" alt="gebruiker login"> 
 </article>  
 
