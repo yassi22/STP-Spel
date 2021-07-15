@@ -45,7 +45,7 @@ function closeNav() {
       </section>  
 
 <h1>Welkom op het admin paneel</h1>  
-<h2> Hier kan je berichten verwijderen </h2>
+<h2> Hier onder kan je je berichten aanpassen   </h2>
     </header>   
 
 
@@ -81,19 +81,19 @@ if ($_SESSION['admin'] != true) {
         while($row = $result->fetch_array()) {        
            
         
-          echo"<section class = 'Berichten'>"; 
-          echo "<p class='tijd '>Gebruiker ".$row['tijd'] ."<br>"."</br>";   
-          echo "<p class='tijd '>Geplaast op  ".$row['tijd'] ."<br>"."</br>";   
-          echo "<p class='bericht'>Bericht:</p>".$row['berichten']."<br>"."</br>";    
-          echo '<input type="hidden" name="bericht"> </input>'."<br>"."</br>";     
+          echo"<div class='Berichten'>"; 
+          echo "<p class='tijd'>Gebruiker: ".$row['tijd'] ."<br>" ;   
+          echo "<p class='tijd'>Geplaast op:  ".$row['tijd'] ."<br>" ;   
+          echo "<p class='bericht'>Bericht:</p>".$row['berichten']."<br>" ;    
+          echo '<input type="hidden" name="bericht"> </input>'."<br>";     
        
          
           echo' <form action="reactie.php" method="GET"> 
-          <input type="text" class="inputreactie" name="reactie" placeholder="schrijf hier je reactie"> </input> <br> <br> 
-          <input type="hidden" name="ID" value ="'.$row['ID'].'"> </input>  <br>  
-          <button type="submit" class="reageerknop"  name="opslaan"> Reageer </button>  <br> <br> 
-          </form> '."<br>";      
-          ?> <button class="knopregister"><a href="Deleteadmin.php?ID=<?php echo $row["ID"]; ?>">Delete</a></button> <br> <br> <?php  
+          <input type="text" class="inputreactie" name="reactie" placeholder="schrijf hier je reactie"> </input>  
+          <input type="hidden" name="ID" value ="'.$row['ID'].'"> </input>  <br> 
+          <button type="submit" class="reageerknop"  name="opslaan"> Reageer </button> 
+          </form> ';     
+          ?> <button class="knopdelete"><a href="Deleteadmin.php?ID=<?php echo $row["ID"]; ?>">Delete</a></button>  <?php  
           
 
           
@@ -110,14 +110,13 @@ if ($_SESSION['admin'] != true) {
             WHERE connectie =  $eyedi";
             if($result2 = $conn->query($sql2)) { 
             while($row2 = $result2->fetch_array()) {  
-            echo "<p class='reactie'>Reactie:</p>".$row2['react']."<br>"."</br>";       
+            echo "<p class='reactie'>Reactie:</p>".$row2['react'];       
          
           
            
  
-            echo "</section>";
-        
-         
+            echo "</div>";
+          
        
 
         
