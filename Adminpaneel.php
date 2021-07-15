@@ -48,11 +48,7 @@ function closeNav() {
 <h2> Hier onder kan je je berichten aanpassen   </h2>
     </header>   
 
-
-<main>  
-
-	</main>
-
+ 
 </body>
 </html>
 
@@ -115,7 +111,7 @@ if ($_SESSION['admin'] != true) {
           
            
  
-            echo "</div>";
+          
           
        
 
@@ -126,11 +122,14 @@ if ($_SESSION['admin'] != true) {
       
           $result2->close(); 
           } 
-      
+          echo "</div>"; 
         $conn->query($sql);  
-        } 
-      
-        $result->close();  
+        }  
+         
+        
+         
+        $result->close();   
+       
              }
       
  
