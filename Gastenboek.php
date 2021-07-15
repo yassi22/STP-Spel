@@ -1,3 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="language" content="NL">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Steen Papier Schaar spel">
+	<meta name="author" content="Yassin Chamlal">
+	<meta name="keywords" content="Steen Papier Schaar spel rps game">
+	<title> Gastenboek </title>
+	<link rel="stylesheet" type="text/css" href="css/Gastenboek.css">
+</head>  
+ 
+<script>  
+function openNav() {
+  document.getElementById("mySidenav").style.width = "300px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+</script>  
+<body>   
+<header>   
+
+  
+
+<section> 
+		<div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a> 
+            <a href="Index.html">Het Spel</a> 
+             <hr>
+            <a href="Over Mij.html">Profiel Pagina</a> 
+            <hr>
+            <a href="Portfolio.html">Gastenboek</a> 
+            <hr>
+            <a href="Contact.html">Resultaten</a>  
+            <hr>   
+            <a href="Gastenboeklogin.php">Uitloggen</a>  
+            <hr>  
+            <img src="img/menuplaatje.png" class="menuplaatje" alt="menu plaatje">
+		  </div>  
+      <span class="menuknop" onclick="openNav()">&#9776;</span> 
+      </section>  
+
+<h1>Welkom op het Gastenboek</h1>  
+    </header>    
+
+    <body>  
+    <div class="plaatsbericht">
+<section> 
+  <form method='POST' enctype='multipart/form-data'> 
+  <input type="text" name="bericht" class="textbericht" placeholder="type hier je bericht"> </input>  <br><br>
+  
+  <input type="hidden" name="reactie"> </input>  
+
+    <input type='file' name='file'> </input> <br><br>
+  <p >Selecteer hieronder een foto</p>
+  <button type="submit" name="versturen" class="knopplaats">Plaats bericht</button> <br><br> 
+  </form> 
+  </section>   
+</div>
+ 
+
+</body>
+</html>
 <?php 
 session_start(); 
 if ($_SESSION['ingelogd'] != true) { 
@@ -14,8 +80,8 @@ if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }    
 
-var_dump($_SESSION['username']);
-var_dump($_SESSION['password']);
+//var_dump($_SESSION['username']);
+//var_dump($_SESSION['password']);
  // dit verstuurd alles
  
  
@@ -96,22 +162,25 @@ var_dump($_SESSION['password']);
   FROM berichten";   
   if($result = $conn->query($sql)) { 
   while($row = $result->fetch_array()) {        
-    
-    echo "<p>Geplaast op  ".$row['tijd'] ."<br>"."</br>";   
-    echo "<p>Bericht:</p>".$row['berichten']."<br>"."</br>";    
-    echo '<input type="hidden" name="bericht"> </input>'."<br>"."</br>";     
+    echo"<div class='Berichten'>";  
+    echo "<p class='tijd'>Gebruiker  ".$row['tijd'] ."<br>" ;   
+    echo "<p class='tijd'>Geplaast op:  ".$row['tijd'] ."<br>" ;   
+    echo "<p class='bericht' >Bericht:</p>".$row['berichten']."<br>" ;    
+    echo '<input type="hidden" name="bericht"> </input>'."<br>";     
 
  
  
     echo' <form action="reactie.php" method="GET"> 
-    <input type="text" name="reactie" placeholder="schrijf hier je reactie"> </input> <br> <br> 
+    <input type="text" class="inputreactie" name="reactie" placeholder="schrijf hier je reactie"> </input>  
    <input type="hidden" name="ID" value ="'.$row['ID'].'"> </input>  <br>  
-    <button type="submit" name="opslaan"> Reageer </button>  <br> <br> 
-    </form> '."<br>";     
+    <button type="submit"  class="reageerknop"  name="opslaan"> Reageer </button>   
+    </form> ';   
+
+    echo"<br>";
     
     if(empty($row['name'])) { 
     }else { 
-     echo "<img src='paatsplaatje/".$row['name']."'class='plaatje' alt=''/>";
+     echo "<img src='paatsplaatje/".$row['name']."'class='plaatjegastenboek' alt=''/>";
     } 
 
 
@@ -122,10 +191,9 @@ var_dump($_SESSION['password']);
       WHERE connectie =  $eyedi";
       if($result2 = $conn->query($sql2)) { 
       while($row2 = $result2->fetch_array()) {  
-      echo "<p>Reactie:</p>".$row2['react']."<br>"."</br>";       
+      echo "<p class='reactie' >Reactie:</p>".$row2['react'];  
 
-      echo "<hr/>"."<br>"."</br>";   
-
+   
 
     
   
@@ -135,7 +203,7 @@ var_dump($_SESSION['password']);
 
     $result2->close(); 
     } 
-
+    echo "</div>"; 
   $conn->query($sql);  
   } 
 
@@ -150,97 +218,5 @@ var_dump($_SESSION['password']);
 
 
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gastenboek</title>
-</head> 
-<style> 
-.linkje{ 
-color:black; 
-text-decoration:none; 
-font-size:20px;
-font-family: 'Open Sans', sans-serif;  
-
-} 
-.knop { 
-    border:2px solid black; 
-	width:140px; 
-	height:24px;
-	font-size:16px; 
-    font-family: 'Open Sans', sans-serif; 
-    border-radius:10px;  
-    margin:0 auto; 
-}  
-.knopvoorreactie { 
-  border:2px solid black; 
-	width:140px; 
-	height:24px;
-	font-size:16px; 
-    font-family: 'Open Sans', sans-serif; 
-    border-radius:10px;  
-    margin:0 auto; 
-    cursor: pointer;
-} 
-
- a { 
-   color:black; 
-   font-size:18px; 
-   font-family: 'Open Sans', sans-serif;  
-   text-decoration:none; 
- }
-
-.textbericht{ 
- 
-text-align:center; 
-font-family: 'Open Sans', sans-serif;
-font-size:14px;  
-width:400px; 
-height:200px; 
-border-radius:10px;
-border:1px solid black; 
-
-} 
-
-.inputvoorreacite { 
-  text-align:center; 
-font-family: 'Open Sans', sans-serif;
-font-size:14px;  
-width:150px; 
-height:40px; 
-border-radius:10px;
-border:1px solid black; 
-} 
-
-.plaatje { 
- height:300px;
- 
-}  
-
-img { 
-  border:1px solid white !important;
-}
- 
-
-</style>
-<body> 
-<section> 
-  <form method='POST' enctype='multipart/form-data'> 
-  <input type="text" name="bericht" class="textbericht" placholder="type hier je bericht"> </input>  <br><br>
-  
-  <input type="hidden" name="reactie"> </input>  
-
-    <input type='file' name='file'> </input>
-  
-  <button type="submit" name="versturen" class="knop">Plaats bericht</button> <br><br> 
-  <a href="Uitloggengastenboek.php" class="linkje" >Uitloggen </a>  <br>
-  <a href="ProfielPagina.php" class="linkje" >Naar de profiel pagina </a>  
-  </form> 
-  </section>   
 
  
-
-</body>
-</html>

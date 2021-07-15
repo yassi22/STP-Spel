@@ -1,0 +1,360 @@
+@charset "UTF-8";
+:root {
+ --blue: #1EBCDE;   
+ --geel: #FFD40C; 
+ --black: #000000; 
+ --font: 'Roboto', sans-serif;  
+ --donkerblue: #2070BF; 
+
+}
+ body { 
+    background-color: var(--blue);  
+    padding:0; 
+    margin:0;
+ }
+ 
+ html {
+    margin: 0px; 
+    background-size: cover;
+    background-repeat: no-repeat;  
+    scroll-behavior: smooth; 
+    padding:0; 
+    margin:0; 
+    } 
+
+/* header */
+h1 { 
+    color:var(--geel);; 
+    margin: 0 auto;   
+    display: block;
+    text-align:center; 
+    margin-left:8vw;
+    font-family:  var(--font);
+    font-size:34px; 
+    padding-top:15px; 
+    font-weight:300; 
+    padding-bottom:20px;
+}  
+
+h2 { 
+  color:var(--geel);; 
+    margin: 0 auto;  
+    display: block;
+    text-align:center;
+    font-family:  var(--font);
+    font-size:30px; 
+    padding-top:15px; 
+    font-weight:300; 
+    padding-bottom:20px;
+}
+  
+/* dit is voor de paneel */
+
+  
+p { 
+    margin:0 auto;  
+    color:var(--black); 
+    text-align:center; 
+    font-family: var(--font);
+    font-size:18px;
+}  
+
+
+.knopdelete { 
+    text-align: center; 
+    font-size:16px; 
+    text-decoration:none; 
+    font-family: var(--font); 
+    cursor: pointer; 
+    background-color:var(--blue); 
+    width: 120px;
+    height:30px; 
+    border:1px solid black;  
+    color:var(--geel);
+    border-radius: 10px;     
+    margin-top:10px; 
+    margin-left:5px;
+    margin-bottom:10px;
+     
+ 
+    
+    }    
+    
+    .knopdelete button { 
+      padding-left:5px;
+    }
+    .knopdelete  a { 
+        color:var(--geel);  
+        text-align: center; 
+        font-size:16px;  
+        margin: 0 auto;
+        text-decoration:none; 
+        font-family: var(--font); 
+        cursor: pointer;  
+         
+        
+        }    
+
+.knopplaats { 
+    text-align: center; 
+    font-size:16px; 
+    text-decoration:none; 
+    font-family: var(--font); 
+    cursor: pointer; 
+    background-color:var(--geel); 
+    width: 120px;
+    height:30px; 
+    border:1px solid black;  
+    color:var(--blue);
+    border-radius: 10px;     
+    margin-top:10px; 
+    margin-left:5px;
+    margin-bottom:10px;
+     
+        } 
+  
+
+        .knopplaats button { 
+            padding-left:5px;
+          } 
+.knopplaats a  { 
+    color:var(--bleu);  
+    text-align: center; 
+    font-size:16px;  
+    margin: 0 auto;
+    text-decoration:none; 
+    font-family: var(--font); 
+    cursor: pointer;  
+        } 
+ 
+
+        .plaatsbericht{ 
+           
+            
+            margin: 0 auto;    
+            text-align: center; 
+            display: block;
+            border-radius:5px; 
+            margin-bottom:50px; 
+        } 
+
+        .textbericht { 
+            border:1px solid black; 
+            height:30px; 
+            width:11vw; 
+            border-radius: 10px; 
+            background-color:var(--geel); 
+            color:var(--blue);  
+            font-family: var(--font); 
+            font-size:15px;   
+            text-align: left; 
+        } 
+ 
+
+ 
+
+
+.tijd { 
+text-align: left; 
+padding-left:5px; 
+margin-top:10px;
+}
+ 
+  
+.naam {  
+    padding-top:10px; 
+    padding-left:5px;
+} 
+
+.plaatjegastenboek { 
+height:300px; 
+width: 300px;
+border-radius: 10px;
+display:block; 
+text-align: left; 
+margin-left:5px;
+}
+
+ 
+
+/*  einde van de paneel */  
+
+
+/* De styling voor de berichten */ 
+
+.Berichten { 
+background-color:yellow;
+border:2px solid black; 
+margin: 0 auto;    
+width: 1000px;
+border-radius:5px;
+height: auto;  
+margin-bottom:50px;
+}    
+
+ 
+ 
+ 
+.Berichten form { 
+    margin: 0 auto; 
+    text-align: left; 
+    display:block;    
+    padding-left:5px;
+} 
+ 
+
+ 
+.reactie { 
+text-align: left;  
+padding-left:5px; 
+margin-top:10px;   
+} 
+
+.bericht { 
+text-align: left; 
+padding-left:5px; 
+margin-top:10px;
+}  
+
+.reageerknop {  
+    border-radius: 10px; 
+    width: 100px;
+    height:30px;
+    color:var(--geel);  
+    text-align: center; 
+    font-size:16px; 
+    text-decoration:none; 
+    font-family: var(--font); 
+    cursor: pointer; 
+    background-color:var(--blue); 
+    border:1px solid black; 
+    margin-top:10px;
+} 
+ 
+
+.reageerknop  a {  
+  
+    color:var(--geel);  
+    text-align: center; 
+    font-size:16px; 
+    text-decoration:none; 
+    font-family: var(--font); 
+    cursor: pointer; 
+} 
+
+ 
+
+.inputreactie {  
+    border:1px solid black; 
+    height:30px; 
+    width:11vw; 
+    border-radius: 10px; 
+    background-color:var(--blue); 
+    color:var(--geel);  
+    font-family: var(--font); 
+    font-size:15px;   
+    text-align: left; 
+     
+    }   
+ 
+ 
+  
+/* golven aan de rechter kant */
+
+  
+.golf { 
+    text-align:right !important; 
+    display: block; 
+    float:right;
+    margin:auto;
+    width: auto; 
+    height:auto; 
+}     
+ 
+
+.golf2 { 
+    text-align:left !important; 
+    display: block; 
+    float:left;
+    margin:auto;
+    width: auto; 
+    height:auto;   
+    transform: rotate(180deg);
+
+}     
+  
+/* dit is voor de menu */
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: #FFD40C;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;  
+  
+}
+
+.sidenav a {
+  padding: 10px 10px 10px 30px;
+  text-decoration: none;
+  font-size: 26px;
+  color: #2070BF;
+  display: block;
+  transition: 0.3s;  
+  font-family: Arial, Helvetica, sans-serif; 
+  text-align: center; 
+   
+}
+
+.sidenav a:hover {
+  color: #6cc6d2;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 15px !important;
+  font-size: 36px;
+  margin-left: 50px;
+}
+.sidenav {padding-top: 15px;}
+.sidenav a {font-size: 26px;}
+.menuknop { 
+ float:right;
+ font-size:45px; 
+  cursor:pointer;
+  color:#2070BF;   
+  padding-right:75px;  
+  
+} 
+
+.menuknop:hover{
+  color:var(--geel);
+}
+
+hr { 
+
+border:1px solid #2070BF;
+}  
+
+.menuplaatje { 
+height: 255px;
+width: 255px;
+margin: 0 auto; 
+text-align: center; 
+display: block; 
+padding-top:50px;
+} 
+   
+
+/* menu resposive */ 
+
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }  
+
