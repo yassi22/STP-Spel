@@ -8,7 +8,9 @@
 	<meta name="author" content="Yassin Chamlal">
 	<meta name="keywords" content="Steen Papier Schaar spel rps game">
 	<title> Gastenboek </title>
-	<link rel="stylesheet" type="text/css" href="css/Gastenboek.css">
+	<link rel="stylesheet" type="text/css" href="css/Gastenboek.css"> 
+
+  <script src="JS/ButtonToTop.js"></script> 
 </head>  
  
 <script>  
@@ -18,8 +20,12 @@ function openNav() {
 
 function closeNav() {
   document.getElementById("mySidenav").style.width = "0";
-}
-</script>  
+}  
+
+
+</script> 
+ 
+ 
 <body>   
 <header>   
 
@@ -202,8 +208,8 @@ if ($conn->connect_error) {
     } 
 
     $result2->close(); 
-    } 
-    echo "</div>"; 
+    }  
+     echo "</div>";
   $conn->query($sql);  
   } 
 
@@ -214,9 +220,6 @@ if ($conn->connect_error) {
 
  
 ?> 
-
-
-
-
+ <button onclick="topFunction()" id="myBtn" class="scrollToTopBtn" title="Go to top">☝️</button>
 
  

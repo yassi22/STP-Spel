@@ -288,7 +288,25 @@ text-align: center;
 display: block; 
 padding-top:50px;
 } 
-   
+.scrollToTopBtn {
+  background-color: var(--donkerblue);
+  border: none;
+  border-radius: 50%;
+  color: white;
+  cursor: pointer;
+  font-size: 25px;
+  line-height: 48px;
+  width: 60px; 
+  height: 60px;
+  text-align: center; 
+  float:right; 
+  margin-right:100px;
+  /* also add a translate effect */
+  transform: translateY(100px);
+  /* and a transition */
+  transition: all .5s ease; 
+  margin-bottom:150px;
+}
 
 /* menu resposive */ 
 

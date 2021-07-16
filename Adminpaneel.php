@@ -9,7 +9,9 @@
 	<meta name="author" content="Yassin Chamlal">
 	<meta name="keywords" content="Steen Papier Schaar spel rps game">
 	<title> Adminpaneel </title>
-	<link rel="stylesheet" type="text/css" href="css/Adminpaneel.css">
+	<link rel="stylesheet" type="text/css" href="css/Adminpaneel.css"> 
+  <script src="JS/ButtonToTop.js"></script> 
+
 </head>  
  
 <script>  
@@ -135,7 +137,9 @@ if ($_SESSION['admin'] != true) {
  
  
 
-?> 
+?>  
+
+<button onclick="topFunction()" id="myBtn" class="scrollToTopBtn" title="Go to top">☝️</button>
 
   
 
