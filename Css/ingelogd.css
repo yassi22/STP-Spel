@@ -43,7 +43,7 @@ h2 {
     font-size:30px; 
     padding-top:15px; 
     font-weight:300; 
-    padding-bottom:20px;
+    padding:10px;
 }
  
 
@@ -280,7 +280,6 @@ background-color: var(--donkerblue);
 
     /* The container */
     .container {
-        display:block; 
         margin: 0 auto; 
         text-align: center;
         padding-left: 30px;

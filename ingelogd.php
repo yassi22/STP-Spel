@@ -58,7 +58,7 @@ function closeNav() {
       
 
 <h1>Welkom op het spel</h1>   
-<h2> Maak je keuze</h2> 
+<h2> Maak je keuze</h2>  
 
 </header>   
 
