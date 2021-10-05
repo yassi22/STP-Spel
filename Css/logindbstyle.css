@@ -188,6 +188,11 @@ left:600px; */
   display: inline-block;
   vertical-align: top; 
    
+} 
+
+.Plaat  { 
+margin-left:100px;
+
 }
 
  
@@ -332,9 +337,7 @@ left:600px; */
   .golf {display: none;} 
 
  .plaatje { 
-   height: 375px;
-   width: 375px; 
-   padding-top:100px;
+    display: none;
  } 
 
  .formulier { 

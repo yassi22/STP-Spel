@@ -92,7 +92,7 @@ function closeNav() {
 </section>    
 </div>  
 
-
+ 
 <div class="Plaat"> 
 <img src="img/userlogin.png" class="plaatje" alt="gebruiker login">   
 </div> 
