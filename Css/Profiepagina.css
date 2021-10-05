@@ -65,7 +65,7 @@ p {
 .gebruikersnaaminput {  
 border:1px solid black; 
 height:30px; 
-max-width:11vw; 
+width:11vw; 
 border-radius: 10px; 
 background-color:var(--blue); 
 color:var(--geel);  
@@ -341,27 +341,48 @@ text-align: left;
   
   
 @media only screen and (max-width: 200px ) {  
-  .plaatje {  display:none}
+  .plaatje {  display:none} 
+  .gebruikersnaaminput { 
+     width:  170px;
+  }
  } 
   
  @media only screen and (max-width: 300px ) {  
-  .plaatje {  display:none}
+  .plaatje {  display:none} 
+  .gebruikersnaaminput { 
+    width:  170px;
+ }
   } 
  
   @media only screen and (max-width: 400px ) {  
-    .plaatje {  display:none}
+    .plaatje {  display:none} 
+    .gebruikersnaaminput { 
+        width:  170px; 
+   }
   } 
   
   @media only screen and (max-width: 500px ) {  
-    .plaatje {  display:none}
+    .plaatje {  display:none} 
+    .gebruikersnaaminput { 
+        width:  170px; 
+   }
   }  
   @media only screen and (max-width: 600px ) {  
-   .plaatje {  display:none}  
+   .plaatje {  display:none}    
+   .gebruikersnaaminput {   width:  170px; }
   } 
  
   @media only screen and (max-width: 700px ) {  
-    .plaatje {  display:none}
-  }  
+    .plaatje {  display:none} 
+    .gebruikersnaaminput {  width:  170px;}
+  }   
+
+  @media only screen and (min-width: 750px ) {  
+    .plaatje {  display:none} 
+    .gebruikersnaaminput {  width:  170px;}
+  } 
+
+
   @media only screen and (max-width: 800px ) {  
     .plaatje {  display:none}
   } 
