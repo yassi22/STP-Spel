@@ -25,10 +25,7 @@ function closeNav() {
 
 
 
-<section>
- <div class="golftje"> <img src="img/golf.png" class="golf" alt="golf aan de rechter kant">   </div> 
- <div> <img src="img/golf.png" class="golf2" alt="golf aan de linker kant">   </div>
-</section>   
+ 
 
 <section> 
 		<div id="mySidenav" class="sidenav">
