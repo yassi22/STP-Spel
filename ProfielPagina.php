@@ -127,8 +127,7 @@ window.onclick = function(event) {
 <header>   
 
  
-
-    <h1>Welkom op de Profiel Pagina</h1> 
+ 
  
 
 
@@ -149,7 +148,10 @@ window.onclick = function(event) {
 		  </div>  
       <span class="menuknop" onclick="openNav()">&#9776;</span> 
       </section> 
-      
+       
+      <h1>Welkom op de Profiel Pagina</h1> 
+ 
+
     </header>   
 
 
