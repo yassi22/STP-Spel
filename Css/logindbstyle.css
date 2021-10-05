@@ -75,7 +75,8 @@ text-align: center;
 }
 form {  
       
- 
+    margin: 0 auto; 
+    display: block;
     text-align:center;   
      
 }  
@@ -179,12 +180,14 @@ left:600px; */
 }  
 
 .wrapper {
-  text-align : center;
+  text-align : center; 
+  margin: 0 auto; 
+
 }
 .Plaat, .Formulueren {
   display: inline-block;
   vertical-align: top; 
-  padding: 125px;
+   
 }
 
  
