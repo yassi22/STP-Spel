@@ -33,7 +33,7 @@ if($conn->connect_error) {
         WHERE ID  =  $userid";       
               $result2 = $conn->query($sql2); 
               $row2 =  $result2->fetch_array();
-        $idprofiel = $row2['ID'];  
+             $idprofiel = $row2['ID'];  
  
         
  

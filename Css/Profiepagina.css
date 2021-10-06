@@ -326,7 +326,9 @@ background-color: var(--geel);
 text-align: center; 
 color:var(--blue);
 font-family: var(--font); 
-
+margin: 0 auto; 
+border:none;  
+font-size: 18px;
 } 
 
 .Score hr { 
