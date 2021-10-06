@@ -161,12 +161,12 @@ cursor: pointer;
 
 .golf { 
   text-align:right !important; 
-  display: block; 
-  float:right;
-  margin:auto;
-  width: auto; 
-  max-height: 100vh;
-  height: auto;  
+    display: block; 
+    float:right;
+    margin:auto;
+    width: auto; 
+    max-height: 100vh;
+    height: auto;   
 } 
 
  
