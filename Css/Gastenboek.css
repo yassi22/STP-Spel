@@ -259,29 +259,7 @@ margin-top:10px;
  
  
   
-/* golven aan de rechter kant */
-
-  
-.golf { 
-    text-align:right !important; 
-    display: block; 
-    float:right;
-    margin:auto;
-    width: auto; 
-    height:auto; 
-}     
- 
-
-.golf2 { 
-    text-align:left !important; 
-    display: block; 
-    float:left;
-    margin:auto;
-    width: auto; 
-    height:auto;   
-    transform: rotate(180deg);
-
-}     
+   
   
 /* dit is voor de menu */
 .sidenav {
