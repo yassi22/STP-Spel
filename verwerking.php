@@ -70,20 +70,20 @@ if(isset($_POST['submit'])){
 
             if($x == 'rock'){
 
-                $sql = "INSERT INTO Resultaten (PC,Speler,win)
-                VALUES ('$x','$speler','$win')";  
+                $sql = "INSERT INTO Resultaten (PC,Speler,win,userID)
+                VALUES ('$x','$speler','$win','$opgehaald')";  
               $conn->query($sql);  
 
             }elseif($x == 'sciccors'){
 
-                $sql = "INSERT INTO Resultaten (PC,Speler,lose)
-                VALUES ('$x','$speler','$lose')";  
+                $sql = "INSERT INTO Resultaten (PC,Speler,lose,userID)
+                VALUES ('$x','$speler','$lose','$opgehaald')";  
             $conn->query($sql);  
 
             }elseif($x == 'paper'){
 
-                $sql = "INSERT INTO Resultaten (PC,Speler,draw)
-                VALUES ('$x','$speler','$draw')";  
+                $sql = "INSERT INTO Resultaten (PC,Speler,draw,userID)
+                VALUES ('$x','$speler','$draw','$opgehaald')";  
             $conn->query($sql);  
 
             } 
@@ -92,20 +92,20 @@ if(isset($_POST['submit'])){
 
             if($x == 'paper'){
 
-                $sql = "INSERT INTO Resultaten (PC,Speler,win)
-                VALUES ('$x','$speler','$win')";  
+                $sql = "INSERT INTO Resultaten (PC,Speler,win,userID)
+                VALUES ('$x','$speler','$win','$opgehaald')";  
                  $conn->query($sql);  
 
             }elseif($x == 'rock'){
 
-                $sql = "INSERT INTO Resultaten (PC,Speler,lose )
-                VALUES ('$x','$speler','$lose')";  
+                $sql = "INSERT INTO Resultaten (PC,Speler,lose ,userID)
+                VALUES ('$x','$speler','$lose','$opgehaald')";  
               $conn->query($sql);  
 
             }elseif($x == 'sciccors'){ 
 
-                $sql = "INSERT INTO Resultaten (PC,Speler,draw)
-                VALUES ('$x','$speler','$draw')";
+                $sql = "INSERT INTO Resultaten (PC,Speler,draw,userID)
+                VALUES ('$x','$speler','$draw','$opgehaald')";
               $conn->query($sql);  
             } 
       } 
