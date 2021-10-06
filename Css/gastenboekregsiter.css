@@ -64,7 +64,7 @@ p {
 .gebruikersnaaminput {  
 border:1px solid black; 
 height:30px; 
-width:12vw; 
+width:10vw; 
 border-radius: 10px; 
 background-color:var(--blue); 
 color:var(--geel);  
@@ -78,7 +78,7 @@ text-align: center;
 .wachtwoordinput {  
     border:1px solid black; 
     height:30px; 
-    width:12vw; 
+    width:10vw; 
     border-radius: 10px; 
     background-color:var(--blue); 
     color:var(--geel);  
@@ -270,6 +270,122 @@ display:  block;
   .Plaat, .Formulueren {
     display: inline-block;
     vertical-align: top; 
-    padding: 125px;
+    padding-top:25px;
+  } 
+
+
+  
+
+ 
+@media only screen and (max-width: 200px ) {  
+  .plaatje {  display:none}  
+
+  .golf { 
+    display: none;
+  } 
+
+  .gebruikersnaaminput { 
+     width:  170px;
   }
+ } 
+  
+ @media only screen and (max-width: 300px ) {  
+  .plaatje {  display:none} 
+  .gebruikersnaaminput { 
+    width:  170px;
+ } 
+ 
+ .golf { 
+  display: none;
+} 
+
+  } 
+ 
+  @media only screen and (max-width: 400px ) {  
+    .plaatje {  display:none} 
+    .gebruikersnaaminput { 
+        width:  170px; 
+   } 
+   
+  .golf { 
+    display: none;
+  } 
+  
+  } 
+  
+  @media only screen and (max-width: 500px ) {  
+    .plaatje {  display:none} 
+    .gebruikersnaaminput { 
+        width:  170px; 
+   } 
+   
+  .golf { 
+    display: none;
+  }  
+
+  .wachtwoordinput { 
+    width: 170px;
+  }
+  
+  
+  }  
+  @media only screen and (max-width: 600px ) {  
+   .plaatje {  display:none}    
+   .gebruikersnaaminput {   width:  170px; } 
+   
+  .golf { 
+    display: none;
+  }  
+
+  .wachtwoordinput { 
+    width: 170px;
+  }
+  
+  
+  } 
+ 
+  @media only screen and (max-width: 700px ) {  
+    .plaatje {  display:none} 
+    .gebruikersnaaminput {  width:  170px;} 
+    
+  .golf { 
+    display: none;
+  }   
+
+
+  .wachtwoordinput { 
+    width: 170px;
+  }
+  
+  }   
+
+  @media only screen and (max-width: 750px ) {  
+   
+    .gebruikersnaaminput {  width:  170px;} 
+    
+  .golf { 
+    display: none;
+  }  
+
+  .wachtwoordinput { 
+    width: 170px;
+  }
+  
+  
+  } 
+
+
+  @media only screen and (max-width: 800px ) {  
+    .plaatje {  display:none} 
+    
+  .golf { 
+    display: none;
+  } 
+  .wachtwoordinput { 
+    width: 170px;
+  }
+   
+  
+  } 
+
   
