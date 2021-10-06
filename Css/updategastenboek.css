@@ -78,7 +78,7 @@ p {
 .gebruikersnaaminput {  
 border:1px solid black; 
 height:30px; 
-width:12vw; 
+width:10vw; 
 border-radius: 10px; 
 background-color:var(--blue); 
 color:var(--geel);  
@@ -92,7 +92,7 @@ text-align: center;
 .wachtwoordinput {  
     border:1px solid black; 
     height:30px; 
-    width:12vw; 
+    width:10vw; 
     border-radius: 10px; 
     background-color:var(--blue); 
     color:var(--geel);  
@@ -385,7 +385,11 @@ padding-top:50px;
     .plaatje {  display:none} 
     .gebruikersnaaminput { 
         width:  170px; 
-   } 
+   }  
+
+   .wachtwoordinput { 
+     width: 170px;
+   }
    
   .golf { 
     display: none;
@@ -398,7 +402,11 @@ padding-top:50px;
    
   .golf { 
     display: none;
-  } 
+  }  
+
+  .wachtwoordinput { 
+    width: 170px;
+  }
   
   } 
  
@@ -408,6 +416,10 @@ padding-top:50px;
     
   .golf { 
     display: none;
+  }  
+
+  .wachtwoordinput { 
+    width: 170px;
   } 
   
   }   
@@ -418,7 +430,11 @@ padding-top:50px;
     
   .golf { 
     display: none;
-  } 
+  }  
+
+  .wachtwoordinput { 
+    width: 170px;
+  }
   
   } 
 
@@ -428,6 +444,10 @@ padding-top:50px;
     
   .golf { 
     display: none;
-  } 
+  }  
+
+  .wachtwoordinput { 
+    width: 170px;
+  }
   
   } 
