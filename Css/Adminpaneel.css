@@ -25,7 +25,8 @@
 /* header */
 h1 { 
     color:var(--geel);; 
-    margin: 0 auto; 
+    margin: 0 auto;   
+    display: block;
     text-align:center;
     font-family:  var(--font);
     font-size:34px; 
@@ -36,7 +37,8 @@ h1 {
 
 h2 { 
   color:var(--geel);; 
-    margin: 0 auto; 
+    margin: 0 auto;  
+    display: block;
     text-align:center;
     font-family:  var(--font);
     font-size:30px; 
@@ -57,7 +59,7 @@ p {
 }  
 
 
-.knopregister { 
+.knopdelete { 
     text-align: center; 
     font-size:16px; 
     text-decoration:none; 
@@ -68,27 +70,39 @@ p {
     height:30px; 
     border:1px solid black;  
     color:var(--geel);
-    border-radius: 10px;   
+    border-radius: 10px;     
+    margin-top:10px; 
+    margin-left:5px;
+    margin-bottom:10px;
+     
  
     
-    }     
-    .knopregister  a { 
+    }    
+    
+    .knopdelete button { 
+      padding-left:5px;
+    }
+    .knopdelete  a { 
         color:var(--geel);  
         text-align: center; 
         font-size:16px;  
         margin: 0 auto;
         text-decoration:none; 
         font-family: var(--font); 
-        cursor: pointer; 
+        cursor: pointer;  
+         
         
         }   
 .tijd { 
-text-align: left;
+text-align: left; 
+padding-left:5px; 
+margin-top:10px;
 }
  
   
 .naam {  
-    padding-top:10px;
+    padding-top:10px; 
+    padding-left:5px;
 } 
 
 .plaatjegastenboek { 
@@ -96,7 +110,8 @@ height:300px;
 width: 300px;
 border-radius: 10px;
 display:block; 
-text-align: left;
+text-align: left; 
+margin-left:5px;
 }
 
  
@@ -104,29 +119,40 @@ text-align: left;
 /*  einde van de paneel */  
 
 
-/* De styling voor de berichten */
+/* De styling voor de berichten */ 
 
 .Berichten { 
 background-color:yellow;
-border:1px solid black; 
-margin: 0 auto;   
-border-radius:  10px ; 
+border:2px solid black; 
+margin: 0 auto;    
+max-width: 1000px;
+border-radius:5px;
+height: auto;  
+margin-bottom:50px;
+}    
+
  
-}  
+ 
  
 .Berichten form { 
     margin: 0 auto; 
     text-align: left; 
     display:block;    
-     
+    padding-left:5px;
 } 
+ 
 
+ 
 .reactie { 
-text-align: left; 
+text-align: left;  
+padding-left:5px; 
+margin-top:10px;   
 } 
 
 .bericht { 
-text-align: left;
+text-align: left; 
+padding-left:5px; 
+margin-top:10px;
 }  
 
 .reageerknop {  
@@ -140,7 +166,8 @@ text-align: left;
     font-family: var(--font); 
     cursor: pointer; 
     background-color:var(--blue); 
-    border:1px solid black;
+    border:1px solid black; 
+    margin-top:10px;
 } 
  
 
@@ -159,43 +186,19 @@ text-align: left;
 .inputreactie {  
     border:1px solid black; 
     height:30px; 
-    width:11vw; 
+     
     border-radius: 10px; 
     background-color:var(--blue); 
     color:var(--geel);  
     font-family: var(--font); 
     font-size:15px;   
-    text-align: left;
+    text-align: left; 
+    
     }  
  
  
- 
- 
- 
-
-/* golven aan de rechter kant */
-
   
-.golf { 
-    text-align:right !important; 
-    display: block; 
-    float:right;
-    margin:auto;
-    width: auto; 
-    height:auto; 
-}     
- 
-
-.golf2 { 
-    text-align:left !important; 
-    display: block; 
-    float:left;
-    margin:auto;
-    width: auto; 
-    height:auto;   
-    transform: rotate(180deg);
-
-}     
+    
   
 /* dit is voor de menu */
 .sidenav {
@@ -242,7 +245,12 @@ text-align: left;
  font-size:45px; 
   cursor:pointer;
   color:#2070BF;   
- 
+  padding-right:75px;  
+  
+} 
+
+.menuknop:hover{
+  color:var(--geel);
 }
 
 hr { 
@@ -258,11 +266,30 @@ text-align: center;
 display: block; 
 padding-top:50px;
 } 
-   
+.scrollToTopBtn {
+  background-color: var(--donkerblue);
+  border: none;
+  border-radius: 50%;
+  color: white;
+  cursor: pointer;
+  font-size: 25px;
+  line-height: 48px;
+  width: 60px; 
+  height: 60px;
+  text-align: center; 
+  float:right; 
+  margin-right:100px;
+  /* also add a translate effect */
+  transform: translateY(100px);
+  /* and a transition */
+  transition: all .5s ease; 
+  margin-bottom:150px;
+}
 
 /* menu resposive */ 
 
   @media screen and (max-height: 450px) {
     .sidenav {padding-top: 15px;}
     .sidenav a {font-size: 18px;}
-  } 
+  }  
+

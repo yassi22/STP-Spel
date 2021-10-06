@@ -88,14 +88,17 @@ function closeNav() {
 <section> 
 		<div id="mySidenav" class="sidenav">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a> 
-            <a href="Index.html">Het Spel</a> 
-             <hr>
-            <a href="Over Mij.html">Profiel Pagina</a> 
+            
+            <a href="ingelogd.php">Het spel</a> 
             <hr>
-            <a href="Portfolio.html">Gastenboek</a> 
+            <a href="GastenBoeklogin.php">Gastenboek</a> 
             <hr>
-            <a href="Contact.html">Resultaten</a>  
-            <hr>  
+            <a href="resulst.php">Resultaten</a>   
+            <hr>   
+            <a href="uitloggen.php">Uitloggen</a>  
+            <hr>    
+            <a href="ProfielPagina.php">Profiel Pagina</a>   
+            <hr>
             <img src="img/menuplaatje.png" class="menuplaatje" alt="menu plaatje">
 		  </div>  
       <span class="menuknop" onclick="openNav()">&#9776;</span> 
@@ -107,7 +110,8 @@ function closeNav() {
 
 
 <main>  
-
+<div class="wrapper">
+<div class="Formulueren"> 
 <section class="formulier"> 
 <form  method="POST">  
 <p class="naam"> Wijzig hier je gebruikersnaam: </p> <br>
@@ -118,11 +122,13 @@ function closeNav() {
  <button type="submit"   class="inlogknop" name="submit"  value="sla op"> Wijzig </button> <br> <br> 
  </form>
 
-</section>   
+</section>    
+</div>
 
-<article>
+<div class="Plaat" >
  <img src="img/updatepagina.png" class="plaatje" alt="persoon wijzigd gegevens"> 
-</article>
+</div> 
+</div>
 	</main>
 
 </body>

@@ -27,7 +27,12 @@ if(isset($_POST['submit'])){
             $x      = $keuzes[rand(0,2)];   
             $win = "Gewonnen"; 
             $lose = "Verloren"; 
-            $draw = "Gelijkspel";
+            $draw = "Gelijkspel"; 
+            $qweryUserId = "SELECT ID FROM gebruikers where username = '".$_SESSION['username']."'";
+            $resultaat = $conn->query($qweryUserId); 
+            $getUserId  =  $resultaat->fetch_array();   
+            $opgehaald = $getUserId['ID'];
+
 
         // Hier gaan we de magie uitvoeren =D 
 
@@ -45,18 +50,18 @@ if(isset($_POST['submit'])){
         if( $speler == 'rock' ){
 
             if($x == 'sciccors'){
-                $sql = "INSERT INTO Resultaten (PC,Speler,win)
-                VALUES ('$x','$speler','$win')";    
+                $sql = "INSERT INTO Resultaten (PC,Speler,win,userID)
+                VALUES ('$x','$speler','$win','$opgehaald')";    
                 $conn->query($sql);  
               
             }elseif($x == 'paper'){
-                $sql = "INSERT INTO Resultaten (PC,Speler,lose)
-                VALUES ('$x ','$speler','$lose')";   
+                $sql = "INSERT INTO Resultaten (PC,Speler,lose,userID)
+                VALUES ('$x ','$speler','$lose','$opgehaald')";   
                 $conn->query($sql);  
                  
             }elseif($x == 'rock'){
-                $sql = "INSERT INTO Resultaten (PC,Speler,draw)
-                VALUES ('$x','$speler','$draw')";   
+                $sql = "INSERT INTO Resultaten (PC,Speler,draw,userID)
+                VALUES ('$x','$speler','$draw','$opgehaald')";   
                 $conn->query($sql);  
             
             }

@@ -193,7 +193,8 @@ margin:auto;
     float:right;
     margin:auto;
     width: auto; 
-    height:auto; 
+    max-height: 100vh;
+    height: auto;  
 }    
 
  
@@ -272,4 +273,12 @@ display:  block;
    
 
 
- 
+  .wrapper {
+    text-align : center;
+  }
+  .Plaat, .Formulueren {
+    display: inline-block;
+    vertical-align: top; 
+    padding: 125px;
+  }
+  

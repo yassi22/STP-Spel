@@ -1,5 +1,5 @@
 
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html>
 <head>
 	<meta charset="utf-8">
@@ -8,7 +8,7 @@
 	<meta name="description" content="Steen Papier Schaar spel">
 	<meta name="author" content="Yassin Chamlal">
 	<meta name="keywords" content="Steen Papier Schaar spel rps game">
-	<title>Keuzes</title>
+	<title>Resultaten</title>
 	<link rel="stylesheet" type="text/css" href="css/resulst.css">
 </head> 
 <script>  
@@ -25,10 +25,7 @@ function closeNav() {
 
 
 
-<section>
- <div> <img src="img/golf.png" class="golf" alt="golf aan de rechter kant">   </div> 
- <div> <img src="img/golf.png" class="golf2" alt="golf aan de linker kant">   </div>
-</section>   
+ 
 
 <section> 
 		<div id="mySidenav" class="sidenav">
@@ -40,6 +37,8 @@ function closeNav() {
             <a href="GastenBoeklogin.php">Gastenboek</a> 
             <hr>
             <a href="resulst.php">Resultaten</a>  
+            <hr>   
+            <a href="uitloggen.php">Uitloggen</a>  
             <hr>  
             <img src="img/menuplaatje.png" class="menuplaatje" alt="menu plaatje">
 		  </div>  
@@ -79,14 +78,14 @@ if($conn->connect_error) {
   $sql = "SELECT * FROM Resultaten"; 
   if($result = $conn->query($sql)) { 
     while($row = $result->fetch_array()) { 
-      echo "<p>Resultaat:PC:</p>"."<p class='computer'>".$row['PC']."</p>"."</br>"."</br>"; 
-      echo "<p>Resultaat:Speler:</p>"."<p class='speler'>".$row['Speler']."</p>"."<br>"."</br>";     
+      echo "<p class='textvisbile'>Resultaat:PC:</p>"."<p class='computer'>".$row['PC']."</p>"."</br>"."</br>"; 
+      echo "<p class='player'>Resultaat:Speler:</p>"."<p class='speler'>".$row['Speler']."</p>"."<br>"."</br>";     
       echo "<p class='Won'>".$row['win']. "</p>";
       echo "<p class='Lose'>".$row['lose']. "</p>";
       echo "<p class='Draw'>".$row['draw']. "</p>";
 
       echo "<br>"; 
-      ?><a href="Deletescore.php?ID=<?php echo $row["ID"]; ?>">Delete</a> <?php
+      ?><a class="deletescore" href="Deletescore.php?ID=<?php echo $row["ID"]; ?>">Delete</a> <?php
   
     
       echo "<hr/>"; 

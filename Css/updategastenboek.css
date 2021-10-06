@@ -78,7 +78,7 @@ p {
 .gebruikersnaaminput {  
 border:1px solid black; 
 height:30px; 
-width:12vw; 
+width:10vw; 
 border-radius: 10px; 
 background-color:var(--blue); 
 color:var(--geel);  
@@ -92,7 +92,7 @@ text-align: center;
 .wachtwoordinput {  
     border:1px solid black; 
     height:30px; 
-    width:12vw; 
+    width:10vw; 
     border-radius: 10px; 
     background-color:var(--blue); 
     color:var(--geel);  
@@ -209,26 +209,17 @@ margin:auto;
  
 
 .golf { 
-    text-align:right !important; 
-    display: block; 
-    float:right;
-    margin:auto;
-    width: auto; 
-    height:auto; 
+  text-align:right !important; 
+  display: block; 
+  float:right;
+  margin:auto;
+  width: auto; 
+  max-height: 100vh;
+  height: auto;  
 }     
+
  
-
-.golf2 { 
-    text-align:left !important; 
-    display: block; 
-    float:left;
-    margin:auto;
-    width: auto; 
-    height:auto;   
-    transform: rotate(180deg);
-
-}     
-
+ 
 
 
  
@@ -258,114 +249,11 @@ display:  block;
 }  
 
 
-
-/* dit is voor het spel */
-
-.keuzes { 
-border:1px black solid;  
-height: 200px;
-width: 200px; 
-border-radius: 100%; 
-background-color: var(--donkerblue);  
-}
-
-  
-
-  /* begin van de keuzes */
-
-
-.moving { 
-  text-align: center;
-  margin:0 auto;
-  display:inline-block;
-   
-}
-
-    /* The container */
-    .container {
-        display:block; 
-        margin: 0 auto; 
-        text-align: center;
-        padding-left: 30px;
-        margin-bottom: 12px;
-        cursor: pointer;
-        font-size: 22px;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        -ms-user-select: none;
-        user-select: none; 
-        display: inline-block; 
-        
-      }
-      
-      /* Hide the browser's default radio button */
-      .container input {
-        margin: 0 auto; 
-        text-align:  center;
-        opacity: 0;
-        cursor: pointer;
-      }
-      
-      /* Create a custom radio button */
-      .checkmark {
-        margin: 0 auto; 
-        text-align: center; 
-        display: inline-block;
-        height: 200px;
-        width: 200px;
-        background-color: #eee;
-        border-radius: 50%;
-      }
-      
-      /* On mouse-over, add a grey background color */
-      .container:hover input ~ .checkmark {
-        background-color: #ccc;
-      }
-      
-      /* When the radio button is checked, add a blue background */
-      .container input:checked ~ .checkmark {
-        background-color: #2196F3;
-      }
-      
-      /* Create the indicator (the dot/circle - hidden when not checked) */
-      .checkmark:after {
-        content: "";
-        margin:0 auto;  
-        display: inline-block;
-        text-align: center;
-        display: none;
-      }
-       
-
-      /* Style the indicator (dot/circle) */
-      .container .checkmark:after {
-           top: 9px;
-          left: 9px;
-          width: 8px;
-          height: 8px;
-          border-radius: 50%;
-          background: white;
-      } 
-  .steen { 
-  padding-top:60px; 
-  font-size:60px;  
-
-  } 
-  .papier { 
-    padding-top:60px; 
-    font-size:60px; 
-  }
-   
-  .schaar { 
-    padding-top:60px; 
-    font-size:60px;  
-
-  }
-   
  
 
-/* einde van de keuzes */
-
+ 
+  
+ 
 
 
  
@@ -433,6 +321,15 @@ display: block;
 padding-top:50px;
 } 
    
+.wrapper {
+  text-align : center;
+}
+.Plaat, .Formulueren {
+  display: inline-block;
+  vertical-align: top; 
+  padding-top:25px;
+}
+
  
 
 
@@ -441,4 +338,116 @@ padding-top:50px;
   @media screen and (max-height: 450px) {
     .sidenav {padding-top: 15px;}
     .sidenav a {font-size: 18px;}
+  }  
+
+
+
+  
+
+ 
+@media only screen and (max-width: 200px ) {  
+  .plaatje {  display:none}  
+
+  .golf { 
+    display: none;
+  } 
+
+  .gebruikersnaaminput { 
+     width:  170px;
+  }
+ } 
+  
+ @media only screen and (max-width: 300px ) {  
+  .plaatje {  display:none} 
+  .gebruikersnaaminput { 
+    width:  170px;
+ } 
+ 
+ .golf { 
+  display: none;
+} 
+
+  } 
+ 
+  @media only screen and (max-width: 400px ) {  
+    .plaatje {  display:none} 
+    .gebruikersnaaminput { 
+        width:  170px; 
+   } 
+   
+  .golf { 
+    display: none;
+  } 
+  
+  } 
+  
+  @media only screen and (max-width: 500px ) {  
+    .plaatje {  display:none} 
+    .gebruikersnaaminput { 
+        width:  170px; 
+   }  
+
+   .wachtwoordinput { 
+     width: 170px;
+   }
+   
+  .golf { 
+    display: none;
+  } 
+  
+  }  
+  @media only screen and (max-width: 600px ) {  
+   .plaatje {  display:none}    
+   .gebruikersnaaminput {   width:  170px; } 
+   
+  .golf { 
+    display: none;
+  }  
+
+  .wachtwoordinput { 
+    width: 170px;
+  }
+  
+  } 
+ 
+  @media only screen and (max-width: 700px ) {  
+    .plaatje {  display:none} 
+    .gebruikersnaaminput {  width:  170px;} 
+    
+  .golf { 
+    display: none;
+  }  
+
+  .wachtwoordinput { 
+    width: 170px;
+  } 
+  
+  }   
+
+  @media only screen and (max-width: 750px ) {  
+   
+    .gebruikersnaaminput {  width:  170px;} 
+    
+  .golf { 
+    display: none;
+  }  
+
+  .wachtwoordinput { 
+    width: 170px;
+  }
+  
+  } 
+
+
+  @media only screen and (max-width: 800px ) {  
+    .plaatje {  display:none} 
+    
+  .golf { 
+    display: none;
+  }  
+
+  .wachtwoordinput { 
+    width: 170px;
+  }
+  
   } 

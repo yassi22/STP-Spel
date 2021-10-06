@@ -91,22 +91,23 @@ function closeNav() {
 
 <main>  
 
+<div class="wrapper"> 
+  <div class="Formulueren">
 <section class="formulier">  
-
- 
 <form  method="POST">  
 <p class="registeerhier">Registeer hier: </p> 
   <p class="naamgebruiker">Gebruikersnaam:</p> <br>
  <input type="text" name="username" class="gebruikersnaaminput" placeholder="vul hier je gebruikersnaam in"></input> <br>
  <br> 
  <button type="submit" name="submit"  class="knopregister"  value="sla op"> Toevoegen </button> <br> <br>  
-<button class="knopterug">  <a href= "logindb.php" > Terug naar de inlog pagina</a> </button> <br> <br>
+<button class="knopterug">  <a href="logindb.php" > Terug naar de inlog pagina</a> </button> <br> <br>
  </form>
 </section>   
-
-<article>
+</div>
+<div class="Plaat">
  <img src="img/gastenboekregister.png" class="plaatje" alt="gastenboek registratie"> 
-</article>
+</div> 
+</div>
 </main>
 
 </body>

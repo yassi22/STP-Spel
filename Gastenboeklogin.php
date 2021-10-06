@@ -155,7 +155,8 @@ function closeNav() {
 
 
 <main>  
-
+<div class="wrapper"> 
+  <div class="Formulueren">
 <section class="formulier">  
     
 <form method="POST"> 
@@ -176,12 +177,13 @@ function closeNav() {
  
 
 </section>   
-
-<article>
+</div> 
+ 
+<div class="Plaat">
  <img src="img/logingastenboek.png" class="plaatje" alt="gastenboek login"> 
-</article>
+</div>
 	</main>
-
+  </div>
 </body>
 
 </html>

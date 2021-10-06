@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -8,7 +9,9 @@
 	<meta name="author" content="Yassin Chamlal">
 	<meta name="keywords" content="Steen Papier Schaar spel rps game">
 	<title> Adminpaneel </title>
-	<link rel="stylesheet" type="text/css" href="css/Adminpaneel.css">
+	<link rel="stylesheet" type="text/css" href="css/Adminpaneel.css"> 
+  <script src="JS/ButtonToTop.js"></script> 
+
 </head>  
  
 <script>  
@@ -23,10 +26,7 @@ function closeNav() {
 <body>   
 <header>   
 
-<section>
- <div> <img src="img/golf.png" class="golf" alt="golf">   </div> 
- <div> <img src="img/golf.png" class="golf2" alt="golf2">   </div>
-</section>    
+  
 
 <section> 
 		<div id="mySidenav" class="sidenav">
@@ -38,6 +38,8 @@ function closeNav() {
             <a href="Portfolio.html">Gastenboek</a> 
             <hr>
             <a href="Contact.html">Resultaten</a>  
+            <hr>   
+            <a href="Gastenboeklogin.php">Uitloggen</a>  
             <hr>  
             <img src="img/menuplaatje.png" class="menuplaatje" alt="menu plaatje">
 		  </div>  
@@ -45,16 +47,14 @@ function closeNav() {
       </section>  
 
 <h1>Welkom op het admin paneel</h1>  
-<h2> Hier kan je berichten verwijderen </h2>
+<h2> Hier onder kan je je berichten aanpassen   </h2>
     </header>   
 
-
-<main>  
-
-	</main>
-
+ 
 </body>
 </html>
+
+
 
 <?php 
 session_start(); 
@@ -79,19 +79,19 @@ if ($_SESSION['admin'] != true) {
         while($row = $result->fetch_array()) {        
            
         
-          echo"<section class = 'Berichten'>"; 
-
-          echo "<p class='tijd '>Geplaast op  ".$row['tijd'] ."<br>"."</br>";   
-          echo "<p class='bericht'>Bericht:</p>".$row['berichten']."<br>"."</br>";    
-          echo '<input type="hidden" name="bericht"> </input>'."<br>"."</br>";     
+          echo"<div class='Berichten'>"; 
+          echo "<p class='tijd'>Gebruiker: ".$row['tijd'] ."<br>" ;   
+          echo "<p class='tijd'>Geplaast op:  ".$row['tijd'] ."<br>" ;   
+          echo "<p class='bericht'>Bericht:</p>".$row['berichten']."<br>" ;    
+          echo '<input type="hidden" name="bericht"> </input>'."<br>";     
        
          
           echo' <form action="reactie.php" method="GET"> 
-          <input type="text" class="inputreactie" name="reactie" placeholder="schrijf hier je reactie"> </input> <br> <br> 
-          <input type="hidden" name="ID" value ="'.$row['ID'].'"> </input>  <br>  
-          <button type="submit" class="reageerknop"  name="opslaan"> Reageer </button>  <br> <br> 
-          </form> '."<br>";      
-          ?> <button class="knopregister"><a href="Deleteadmin.php?ID=<?php echo $row["ID"]; ?>">Delete</a></button> <br> <br> <?php  
+          <input type="text" class="inputreactie" name="reactie" placeholder="schrijf hier je reactie"> </input>  
+          <input type="hidden" name="ID" value ="'.$row['ID'].'"> </input>  <br> 
+          <button type="submit" class="reageerknop"  name="opslaan"> Reageer </button> 
+          </form> ';     
+          ?> <button class="knopdelete"><a href="Deleteadmin.php?ID=<?php echo $row["ID"]; ?>">Delete</a></button>  <?php  
           
 
           
@@ -108,14 +108,13 @@ if ($_SESSION['admin'] != true) {
             WHERE connectie =  $eyedi";
             if($result2 = $conn->query($sql2)) { 
             while($row2 = $result2->fetch_array()) {  
-            echo "<p class='reactie'>Reactie:</p>".$row2['react']."<br>"."</br>";       
+            echo "<p class='reactie'>Reactie:</p>".$row2['react'];       
          
           
            
  
-            echo "</section>";
-        
-         
+          
+          
        
 
         
@@ -125,19 +124,22 @@ if ($_SESSION['admin'] != true) {
       
           $result2->close(); 
           } 
-      
+          echo "</div>"; 
         $conn->query($sql);  
-        } 
-      
-        $result->close();  
+        }  
+         
+        
+         
+        $result->close();   
+       
              }
       
  
  
 
-?> 
+?>  
+
+<button onclick="topFunction()" id="myBtn" class="scrollToTopBtn" title="Go to top">☝️</button>
 
   
 
-
-  

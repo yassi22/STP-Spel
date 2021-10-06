@@ -127,8 +127,7 @@ window.onclick = function(event) {
 <header>   
 
  
-
-    <h1>Welkom op de Profiel Pagina</h1> 
+ 
  
 
 
@@ -141,18 +140,23 @@ window.onclick = function(event) {
             <hr>
             <a href="GastenBoeklogin.php">Gastenboek</a> 
             <hr>
-            <a href="resulst.php">Resultaten</a>  
+            <a href="resulst.php">Resultaten</a>   
+            <hr>  
+            <a href="uitloggen.php">Uitloggen</a>  
             <hr>  
             <img src="img/menuplaatje.png" class="menuplaatje" alt="menu plaatje">
 		  </div>  
       <span class="menuknop" onclick="openNav()">&#9776;</span> 
       </section> 
-      
+       
+      <h1>Welkom op de Profiel Pagina</h1> 
+ 
+
     </header>   
 
 
 <main>  
-
+ 
 <section class="formulier"> 
 <form  method="POST">   
 <p> Vul hier je Profiel gevens in:
@@ -170,24 +174,18 @@ window.onclick = function(event) {
  <section>
 
 </section>    
-
+ 
 <div class="dropdown">
         <button onclick="myFunction()" class="dropbtn">Wijzig gegevens</button>
         <div id="myDropdown" class="dropdown-content">
           <a href="updatepage.php">Wijzig je profiel gegevens</a>
-          <a href="registerupdate.php">Wijzig je username</a>
+          <a href="updatelogin.php">Wijzig je username</a>
           <a href="updategastenboek.php">Wijzig je gastenboek gegevens </a>
         </div>
       </div>   
 </section>  
   
-
-<article>
- <img src="img/userlogin.png" class="plaatje" alt="gebruiker login"> 
-</article>  
-
-
-
+ 
 
 <br>
 
@@ -231,8 +229,9 @@ echo "<br><br>";
 $sql = "SELECT * FROM Resultaten"; 
 if($result = $conn->query($sql)) { 
   while($row = $result->fetch_array()) { 
-    echo "<p>Resultaat:PC</p>".$row['PC']."</br>"."</br>"; 
-    echo "<p>Resultaat:Speler</p>".$row['Speler']."<br>"."</br>";     
+    echo "<p>Keuze:PC</p>".$row['PC']."</br>"."</br>"; 
+    echo "<p>Keuze:Speler</p>".$row['Speler']."<br>"."</br>";      
+    echo "<p>Resultaat van spel</p>";
     echo "<p>  </p>".$row['win'];
     echo "<p>  </p>".$row['lose'];
     echo "<p>  </p>".$row['draw']; 
@@ -253,6 +252,9 @@ $conn->close();
 </article>
 </section> 
 
+<article> 
+ <img src="img/userlogin.png" class="plaatje" alt="gebruiker login"> 
+</article>  
 
 
 

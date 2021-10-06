@@ -2,9 +2,10 @@
 session_start(); 
 if ($_SESSION['ingelogd'] != true) { 
     header("Location: logindb.php");  
-}     
-var_dump($_SESSION['username']); 
-var_dump($_SESSION['password']);  
+}   
+
+//var_dump($_SESSION['username']); 
+//var_dump($_SESSION['password']);  
 
  
 $servername = "localhost";
@@ -100,7 +101,8 @@ function closeNav() {
             <a href="Portfolio.html">Gastenboek</a> 
             <hr>
             <a href="Contact.html">Resultaten</a>  
-            <hr>  
+            <hr>   
+            <a href="ProfielPagina.php">ProfielPagina</a>  
             <img src="img/menuplaatje.png" class="menuplaatje" alt="menu plaatje">
 		  </div>  
       <span class="menuknop" onclick="openNav()">&#9776;</span> 
@@ -112,7 +114,8 @@ function closeNav() {
 
 
 <main>  
-
+<div class="wrapper"> 
+<div class="Formulueren">
 <section class="formulier">  
    
 <form  method="POST">  
@@ -130,10 +133,11 @@ function closeNav() {
  
  
 </section>   
-
-<article>
+</div>
+<div class="Plaat">
  <img src="img/updategastenboek.png" class="plaatje" alt="Wijzeging van het gastenboek"> 
-</article>
+</div> 
+</div>
 	</main>
 
 </body>

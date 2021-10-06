@@ -65,7 +65,7 @@ p {
 .gebruikersnaaminput {  
 border:1px solid black; 
 height:30px; 
-max-width:11vw; 
+width:11vw; 
 border-radius: 10px; 
 background-color:var(--blue); 
 color:var(--geel);  
@@ -171,8 +171,8 @@ width:500px;
 border-radius:10px;  
 margin: 0 auto; 
 text-align: center;
-display:  block; 
- 
+display:  block;  
+  
  
  
 }  
@@ -309,11 +309,11 @@ padding-top:50px;
 /* dit is voor de score */ 
 
 .Score { 
-text-align: left;
+text-align: center;
 border:1px solid black; 
 height:auto;
 width: 300px; 
-margin-left:10vw; 
+margin-left:4vw; 
 border-radius: 10px; 
 background-color: var(--geel);   
  
@@ -323,20 +323,72 @@ background-color: var(--geel);
 
 
 .Score p {  
-text-align: left; 
+text-align: center; 
 color:var(--blue);
 font-family: var(--font); 
 
 } 
 
 .Score hr { 
-display:none;
+display:block;
 }
  
 .Scorenboard { 
 text-align: left;  
- position: relative; 
- bottom:400px;
+ float:left;
 }
 
+  
+  
+@media only screen and (max-width: 200px ) {  
+  .plaatje {  display:none} 
+  .gebruikersnaaminput { 
+     width:  170px;
+  }
+ } 
+  
+ @media only screen and (max-width: 300px ) {  
+  .plaatje {  display:none} 
+  .gebruikersnaaminput { 
+    width:  170px;
+ }
+  } 
+ 
+  @media only screen and (max-width: 400px ) {  
+    .plaatje {  display:none} 
+    .gebruikersnaaminput { 
+        width:  170px; 
+   }
+  } 
+  
+  @media only screen and (max-width: 500px ) {  
+    .plaatje {  display:none} 
+    .gebruikersnaaminput { 
+        width:  170px; 
+   }
+  }  
+  @media only screen and (max-width: 600px ) {  
+   .plaatje {  display:none}    
+   .gebruikersnaaminput {   width:  170px; }
+  } 
+ 
+  @media only screen and (max-width: 700px ) {  
+    .plaatje {  display:none} 
+    .gebruikersnaaminput {  width:  170px;}
+  }   
 
+  @media only screen and (min-width: 750px ) {  
+   
+    .gebruikersnaaminput {  width:  170px;}
+  } 
+
+
+  @media only screen and (max-width: 800px ) {  
+    .plaatje {  display:none}
+  } 
+ 
+
+
+  
+ 
+ 

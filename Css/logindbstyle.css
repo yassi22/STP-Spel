@@ -30,7 +30,8 @@ h1 {
     font-size:34px; 
     padding-top:15px; 
     margin-left:12vw; 
-    font-weight:300;
+    font-weight:300; 
+    padding-bottom:20px;
 } 
  
 
@@ -40,7 +41,8 @@ h1 {
 color:var(--black); 
 font-family: var(--font); 
 font-size:18px; 
-padding-bottom:10px;
+padding-bottom:10px; 
+ 
 } 
 
 .noregister { 
@@ -73,20 +75,24 @@ text-align: center;
 }
 form {  
       
-    margin:0 auto; 
-    text-align:center;  
+    margin: 0 auto; 
+    display: block;
+    text-align:center;   
+     
 }  
 
  
   
-.formulier { 
-    text-align:left; 
+.formulier {  
+  
+    text-align:center; 
     height:305px; 
     width:300px; 
     border-radius: 10px;
     background-color: var(--geel); 
-    border: 1px solid black; 
-    margin-left:4vw; 
+    border: 1px solid black;  
+    margin-left:4vw;
+   
    
 }
 
@@ -135,29 +141,26 @@ cursor: pointer;
 
 /* golven aan de rechter kant */
 
- 
- 
+  
 
+ 
+ 
 .golf { 
     text-align:right !important; 
     display: block; 
     float:right;
     margin:auto;
     width: auto; 
-    height:auto;  
-/* height: clamp( 200px, 1080px, 1440px); */
-
-
-}    
-
-  
+    max-height: 100vh;
+    height: auto;  
+} 
 /* dit is voor het plaatje van de gebruiker */ 
 
 .loginuser  { 
 height:200px !important; 
 width:200px !important; 
 border-radius:10px;
-
+margin-right:4vw;
 }
 
 .plaatje {  
@@ -166,12 +169,31 @@ max-height: clamp(200px, 400px, 500px);
 border-radius:10px;  
 margin: 0 auto; 
 text-align: center;
-display:  block;  
+display:  block;   
+padding-top:10px;  
+ 
+ 
 /* position: absolute;  
  
 left:600px; */
  
+}  
+
+.wrapper {
+  text-align : center; 
+  margin: 0 auto; 
+
+}
+.Plaat, .Formulueren {
+  display: inline-block;
+  vertical-align: top; 
+   
 } 
+
+.Plaat  { 
+margin-left:100px;
+
+}
 
  
  
@@ -265,7 +287,29 @@ left:600px; */
        height: 275px;
        width: 275px; 
        padding-top:10px;
+     }  
+
+     .wrapper { 
+       text-align: center;   
+       margin: 0 auto;  
+       display: block; 
+       overflow: hidden; 
+
+
      } 
+
+     .Plaat { 
+       display:none;
+     }  
+
+
+     .Formulueren { 
+       margin: 0 auto; 
+       display: block; 
+       text-align: center;
+     }
+
+
     
      .formulier { 
       margin: 0 auto;
@@ -293,9 +337,7 @@ left:600px; */
   .golf {display: none;} 
 
  .plaatje { 
-   height: 375px;
-   width: 375px; 
-   padding-top:100px;
+    display: none;
  } 
 
  .formulier { 
@@ -320,16 +362,8 @@ left:600px; */
 }   
 
 
-@media only screen and (max-width: 1920px) {   
-
-  .golf  { 
-    height:966px;
-  }
-
-  
-  
-}   
-
+ 
+ 
 
 
 

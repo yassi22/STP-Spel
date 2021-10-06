@@ -160,15 +160,14 @@ cursor: pointer;
 
 
 .golf { 
-    text-align:right !important; 
-    display: block; 
-    float:right;
-    margin:auto;
-    width: auto; 
-    height:auto; 
-}    
-
- 
+  text-align:right !important; 
+  display: block; 
+  float:right;
+  margin:auto;
+  width: auto; 
+  max-height: 100vh;
+  height: auto;  
+} 
 
 
 
@@ -322,40 +321,109 @@ padding-top:50px;
    /* einde van de dropdown button */ 
 
 
-
-/* dit is voor de score */ 
-
-.Score { 
-text-align: left;
-border:1px solid black; 
-height:auto;
-width: 200px; 
-margin-left:10vw; 
-border-radius: 10px; 
-background-color: var(--geel);   
  
-
-
-} 
-
-
-.Score p {  
-text-align: left; 
-color:var(--blue);
-font-family: var(--font); 
-
-} 
-
-.Score hr { 
-display:none;
+.wrapper {
+  text-align : center;
+}
+.Plaat, .Formulueren {
+  display: inline-block;
+  vertical-align: top; 
+  padding-top:25px;
 }
  
-.Scorenboard { 
-text-align: left; 
-
-}
 
 
+
+ 
+@media only screen and (max-width: 200px ) {  
+  .plaatje {  display:none}  
+
+  .golf { 
+    display: none;
+  } 
+
+  .gebruikersnaaminput { 
+     width:  170px;
+  }
+ } 
+  
+ @media only screen and (max-width: 300px ) {  
+  .plaatje {  display:none} 
+  .gebruikersnaaminput { 
+    width:  170px;
+ } 
+ 
+ .golf { 
+  display: none;
+} 
+
+  } 
+ 
+  @media only screen and (max-width: 400px ) {  
+    .plaatje {  display:none} 
+    .gebruikersnaaminput { 
+        width:  170px; 
+   } 
+   
+  .golf { 
+    display: none;
+  } 
+  
+  } 
+  
+  @media only screen and (max-width: 500px ) {  
+    .plaatje {  display:none} 
+    .gebruikersnaaminput { 
+        width:  170px; 
+   } 
+   
+  .golf { 
+    display: none;
+  } 
+  
+  }  
+  @media only screen and (max-width: 600px ) {  
+   .plaatje {  display:none}    
+   .gebruikersnaaminput {   width:  170px; } 
+   
+  .golf { 
+    display: none;
+  } 
+  
+  } 
+ 
+  @media only screen and (max-width: 700px ) {  
+    .plaatje {  display:none} 
+    .gebruikersnaaminput {  width:  170px;} 
+    
+  .golf { 
+    display: none;
+  } 
+  
+  }   
+
+  @media only screen and (max-width: 750px ) {  
+   
+    .gebruikersnaaminput {  width:  170px;} 
+    
+  .golf { 
+    display: none;
+  } 
+  
+  } 
+
+
+  @media only screen and (max-width: 800px ) {  
+    .plaatje {  display:none} 
+    
+  .golf { 
+    display: none;
+  } 
+  
+  } 
+
+ 
+ 
 
   
  

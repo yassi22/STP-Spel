@@ -92,7 +92,8 @@ function closeNav() {
 
 
 <main>  
-
+<div class="wrapper"> 
+  <div class="Formulueren">
 <section class="formulier">  
 
 <form  method="POST">    
@@ -105,15 +106,16 @@ function closeNav() {
 
   <button type="submit" name="submit" class="inlogknop"  value="sla op"> Toevoegen </button> <br> <br> 
 
- <button class="knopterug" ><a href="logindb.php" class="linklogout"> Terug naar de inlog pagina </a> </button> <br>   <br>
- <button class="knopterug"><a href="Gastenboeklogin.php" class="linklogout">Terug naar het spel</a> </button>  
+ <button class="knopterug" ><a href="Gastenboeklogin.php" class="linklogout"> Terug naar de inlog pagina </a> </button> <br>   <br>
+ <button class="knopterug"><a href="ingelogd.php" class="linklogout">Terug naar het spel</a> </button>  
   </form>
 
 </section>   
-
-<article>
+</div>
+<div class="Plaat">
  <img src="img/gastenboekregister.png" class="plaatje" alt="gastenboek registratie"> 
-</article>
+</div>
+</div>
 </main>
 
 </body>

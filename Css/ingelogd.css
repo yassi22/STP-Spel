@@ -43,7 +43,7 @@ h2 {
     font-size:30px; 
     padding-top:15px; 
     font-weight:300; 
-    padding-bottom:20px;
+    padding:10px;
 }
  
 
@@ -100,8 +100,6 @@ text-align: center;
     text-align: center;
     } 
 form {  
-    display:block;
-    margin:0 auto; 
     text-align:center;  
 } 
   
@@ -137,7 +135,9 @@ cursor: pointer;
     height:30px; 
     border:1px solid black;  
     color:var(--geel);
-    border-radius: 10px;  
+    border-radius: 10px;   
+    margin: 0 auto; 
+    display:block;
     
     }   
 
@@ -204,22 +204,24 @@ margin:auto;
  
 
 .golf { 
-    text-align:right !important; 
-    display: block; 
-    float:right;
-    margin:auto;
-    width: auto; 
-    height:auto; 
+  text-align:right !important; 
+  display: block; 
+  float:right;
+  margin:auto;
+  width: auto; 
+  max-height: 100vh;
+  height: auto;  
 }     
  
 
 .golf2 { 
-    text-align:left !important; 
-    display: block; 
-    float:left;
-    margin:auto;
-    width: auto; 
-    height:auto;   
+  text-align:left !important; 
+  display: block; 
+  float:left;
+  margin:auto;
+  width: auto; 
+  max-height: 100vh;
+  height: auto;  
     transform: rotate(180deg);
 
 }     
@@ -278,7 +280,6 @@ background-color: var(--donkerblue);
 
     /* The container */
     .container {
-        display:block; 
         margin: 0 auto; 
         text-align: center;
         padding-left: 30px;

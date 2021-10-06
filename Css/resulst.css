@@ -205,22 +205,24 @@ margin:auto;
  
 
 .golf { 
-    text-align:right !important; 
-    display: block; 
-    float:right;
-    margin:auto;
-    width: auto; 
-    height:auto; 
+  text-align:right !important; 
+  display: block; 
+  float:right;
+  margin:auto;
+  width: auto; 
+  max-height: 100vh;
+  height: auto;  
 }     
  
 
 .golf2 { 
-    text-align:left !important; 
-    display: block; 
-    float:left;
-    margin:auto;
-    width: auto; 
-    height:auto;   
+  text-align:left !important; 
+  display: block; 
+  float:left;
+  margin:auto;
+  width: auto; 
+  max-height: 100vh;
+  height: auto;  
     transform: rotate(180deg);
 
 }     
@@ -399,7 +401,22 @@ a{
   font-family: var(--font);   
   margin: 0 auto;  
   display: block;
-} 
+}  
+
+
+
+.textvisbile {
+color:var(--geel);  
+font:16px;
+-webkit-text-stroke: 0.2px black;
+}  
+.player{ 
+  color:var(--donkerblue);  
+font:16px;
+-webkit-text-stroke: 0.2px black;
+}
+
+ 
 
 .spelerwintmeest{ 
   text-align: center;
@@ -418,6 +435,23 @@ a{
   display: block;
 }
  
+
+.deletescore { 
+  border-radius: 10px; 
+  width: 100px;
+  height:30px;
+  color:var(--blue);  
+  text-align: center;  
+  margin: 0 auto; 
+  display:block; 
+  padding-top: 10px;
+  font-size:18px; 
+  text-decoration:none; 
+  font-family: var(--font); 
+  cursor: pointer; 
+  background-color:var(--geel); 
+  border:1px solid black;   
+}
  
  
 
@@ -483,7 +517,6 @@ text-align: center;
 display: block; 
 padding-top:50px;
 } 
-    
 /* Resultaat delete knop */ 
   
    #text{ 
@@ -511,7 +544,7 @@ padding-top:50px;
      width: 360px;
    } 
    
-     
+      
    
    .inlogknop { 
      text-align: center; 
