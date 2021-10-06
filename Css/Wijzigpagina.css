@@ -331,8 +331,7 @@ padding-top:50px;
 .Plaat, .Formulueren {
   display: inline-block;
   vertical-align: top; 
-  padding: 125px;
-
+  padding-top:25px; 
 } 
  
 
