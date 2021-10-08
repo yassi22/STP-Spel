@@ -125,17 +125,17 @@ if ($conn->connect_error) {
 
   if (empty($_FILES)) {
 
-    $bericht = ($_POST['bericht']); 
-    $sql = "INSERT INTO berichten (Berichten,Tijd) 
-    VALUES ( '$bericht',CURRENT_TIMESTAMP() )";    
+    $bericht = ($_POST['bericht']);  
+    $sql = "INSERT INTO berichten (Berichten,Tijd,auteur) 
+    VALUES ( '$bericht',CURRENT_TIMESTAMP(),'".$_SESSION['username']."')";    
     
  
 }  else {
 
-      $bericht = ($_POST['bericht']); 
-      $sql = "INSERT INTO berichten (Berichten,Tijd,name) 
+      $bericht = ($_POST['bericht']);  
+      $sql = "INSERT INTO berichten (Berichten,Tijd,name,auteur) 
       
-      VALUES ('$bericht',CURRENT_TIMESTAMP(),'".$name."')";   
+      VALUES ('$bericht',CURRENT_TIMESTAMP(),'".$name."','".$_SESSION['username']."')";   
         $conn->query($sql);     
          
 }   
@@ -164,12 +164,12 @@ if ($conn->connect_error) {
 
 
  // bericht ophalen en er door heen lopen
-  $sql = "SELECT berichten,tijd,name,ID
+  $sql = "SELECT berichten,tijd,name,ID,auteur
   FROM berichten";   
   if($result = $conn->query($sql)) { 
   while($row = $result->fetch_array()) {        
     echo"<div class='Berichten'>";  
-    echo "<p class='tijd'>Gebruiker  ".$row['tijd'] ."<br>" ;   
+    echo "<p class='tijd'>Gebruiker:".$row['auteur'] ."<br>" ;   
     echo "<p class='tijd'>Geplaast op:  ".$row['tijd'] ."<br>" ;   
     echo "<p class='bericht' >Bericht:</p>".$row['berichten']."<br>" ;    
     echo '<input type="hidden" name="bericht"> </input>'."<br>";     
